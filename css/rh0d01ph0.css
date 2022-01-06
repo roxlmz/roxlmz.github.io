@@ -248,7 +248,7 @@ h4::after{
 .discri{
     width: 980px;
     background-color: #fff;
-    margin: 0 auto;
+    margin: 0 auto 20px !important;;
     justify-content: center;
     font-family: sans-serif;
     line-height: 30px;
