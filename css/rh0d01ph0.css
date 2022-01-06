@@ -530,3 +530,70 @@ h4::after{
 }
 /* FIM TRABALHOS */
 
+/* ==================================================== */
+	/* CONTATO*/
+/* ==================================================== */
+.titulo-contato h4{
+    font-family: "Roboto", sans-serif;
+    color: black;
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+}
+h4::after{
+    content: "";
+    width: 150px;
+    height: 5px;
+    background-color: #64bd00;
+    display: block;
+    margin: 10px auto;
+    border-radius: 50px;
+}
+.contato{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    font-family: 'Poppins', sans-serif;
+    justify-content: center;
+    text-align: justify;
+    margin: 50px auto 50px;
+    font-size: 13px;
+    max-width: 980px;
+    padding: 30px!important;
+    box-shadow: 0 0px 2px 0 rgb(0 0 0 / 25%), 0 0px 0px 0 rgb(0 0 0 / 20%)!important;
+}
+.txt-contato{
+    width: 700px;
+    margin: 0 auto;
+    text-align: justify;
+    font-family: sans-serif;
+    line-height: 30px;
+    padding: 20px;
+    font-size: 16px;
+    text-align: justify;  
+}
+.btn-contato{
+    display: flex;
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px gray;
+    border-radius: 10px !important;
+    padding: 10px;
+    width: 50%;
+    margin: 0 auto;
+
+}
+.btn-contato:hover{
+    background-color: #64bd00;;
+    color: black;
+    border: solid 2px gray;
+}
+/* FIM CONTATO*/
+
+
+
+
