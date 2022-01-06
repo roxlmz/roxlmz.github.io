@@ -5,6 +5,11 @@
     list-style: none;
     box-sizing: border-box;    
 }
+a {
+    text-decoration: none;
+    color: white;
+}
+
 html{
     scroll-behavior: smooth;
 }
@@ -214,6 +219,7 @@ html{
 }
 #s1{
     font-size: 50px;
+    color: white;
 }
 
 @keyframes seta {
@@ -257,6 +263,11 @@ h4::after{
     text-align: justify;
     text-justify: inter-word;
     margin-bottom: 50px !important;
+}
+.discri a{
+   text-decoration: none;
+   color: blue;
+   font-weight: 600;
 }
 .discri > p > a:hover{
     background: #64bd00;
