@@ -5,6 +5,9 @@
     list-style: none;
     box-sizing: border-box;    
 }
+html{
+    scroll-behavior: smooth;
+}
 
 /* INICIO header nav */
 
@@ -192,6 +195,33 @@
     -webkit-transition: opacity 0.3s ease-in-out;
     -moz-transition: opacity 0.3s ease-in-out;
     -o-transition: opacity 0.3s ease-in-out;
+}
+#seta{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 100px;
+    margin: 0 auto;
+    z-index: 9999999999999999999999;
+    width: 30px;
+    height: 30px;
+    color: #ffffff;
+    animation-name: seta;
+    animation-duration: 0.5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+#s1{
+    font-size: 50px;
+}
+
+@keyframes seta {
+	from {
+		transform: translateY(50px);
+	}
+    to {
+		transform: translateX(0);
+	}
 }
 /* FIM hero banner */
 
