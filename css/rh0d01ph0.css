@@ -68,4 +68,134 @@
 
 /* INICIO hero banner */
 
+.me-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #101815;  
+    padding-top: 130px;
+    padding-bottom: 50px;
+    min-height: 90vh;
+    margin-bottom: 50px;
+}
+.avatar img{
+    width: 300px; 
+    height: 300px;
+    border-radius: 50%;
+    border: 5px solid rgba(255,255,255,0.1);
+}
+#perfil{
+    max-width: 500px;
+    margin-left: 50px !important;
+    color: #fff
+}
+#perfil{
+    max-width: 500px;
+    margin-left: 50px !important;
+    color: #fff
+}
+.h2-perfil{
+    font-family: 'Roboto', sans-serif; 
+    margin-bottom: 10px;
+}
+.h3-perfil{
+    color: #ffffff;
+    font-size: 45px;
+    letter-spacing: 1px;
+    margin: 0 0 15px;
+}
+.h3-perfil span{
+    color: #64bd00;
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 600;
+}
+#perfil p{
+    font-family: "Roboto", sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+    max-width: 500px;
+    letter-spacing: 1.5px;
+    margin: 0 0 15px; 
+}
+#social{
+    margin: 15px;
+}
+.fa{
+    padding: 15px;
+    font-size: 20px !important;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px;
+    border-radius: 10%;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 1;
+}
+.fa:hover {
+    opacity: 0.5;
+    transition: opacity 0.3s ease-in-out;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+}
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+.fa-github{
+    background: #282828;
+    color: white;
+}
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+.fa-instagram {
+    background: #e3006f;
+    color: white;
+}
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+#buttons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.btn-hero{
+     font-family: 'Poppins', sans-serif;
+     color: #fff;
+     background-color: #666666;
+     text-align: center;
+     padding: 1px 15px 0px 0px;
+     cursor: pointer;
+     border-radius: 5px;
+     font-size: 15px;
+     font-weight: 600;
+     letter-spacing: 0.5;
+     text-transform: uppercase;
+     overflow: hidden;
+     transition: opacity 0.3s ease-in-out;
+     opacity: 1;
+     margin-left: 10px;
+     margin-bottom: 10px;
+}
+#b2{
+    background-color: #64bd00;
+}
+.btn-hero:hover {
+    opacity: 0.5;
+    transition: opacity 0.3s ease-in-out;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+}
+/* FIM hero banner */
+
+/* ==================================================== */
+/* ==================================================== */
+
 
