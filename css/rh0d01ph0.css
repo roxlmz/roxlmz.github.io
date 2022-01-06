@@ -9,7 +9,10 @@ html{
     scroll-behavior: smooth;
 }
 
-/* INICIO header nav */
+/* ==================================================== */
+	/* HEADER NAV*/
+/* ==================================================== */
+
 
 .header-nav-container{
     display: flex;
@@ -64,13 +67,11 @@ html{
 .btns-menu:active {
     background: #64bd00; 
 }
-/* FIM header nav */
+/* FIM HEADER NAV */
 
 /* ==================================================== */
+	/* HERO BANNER */
 /* ==================================================== */
-
-/* INICIO hero banner */
-
 .me-container{
     display: flex;
     flex-direction: row;
@@ -223,9 +224,128 @@ html{
 		transform: translateX(0);
 	}
 }
-/* FIM hero banner */
+/* FIM HERO BANNER */
 
 /* ==================================================== */
+	/* SOBRE ME */
 /* ==================================================== */
+.titulo-sobre-me h4{
+    font-family: "Roboto", sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+}
+h4::after{
+    content: "";
+    width: 150px;
+    height: 5px;
+    background-color: #64bd00;
+    display: block;
+    margin: 10px auto;
+    border-radius: 50px;
+}
+.discri{
+    width: 980px;
+    background-color: #fff;
+    margin: 0 auto;
+    justify-content: center;
+    font-family: sans-serif;
+    line-height: 30px;
+    padding: 0 20px 0px 20px;
+    font-size: 16px;
+    text-align: justify;
+    text-justify: inter-word;
+    margin-bottom: 50px !important;
+}
+.discri > p > a:hover{
+    background: #64bd00;
+    padding: 5px;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+}
+.btn-curriculo-sobre-me a{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.5;
+    color: white;
+    background-color:#64bd00;
+    font-weight: 600;
+    display: inline-block;
+    margin: 10px 0px 0px 0px;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+.btn-curriculo-sobre-me a:hover{
+    border: solid 1px black;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+}
+.experiencia-educacao{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: sans-serif;
+    line-height: 30px;
+    font-size: 16px;
+    text-align: justify;
+    text-justify: inter-word;
+    margin-bottom: 50px;
+}
 
-
+.experiencia-educacao h5{
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+.experiencia-educacao h6{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.edu{
+    flex-basis: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    max-width: 500px;
+    padding: 30px!important;
+    margin-right: 12px !important;
+    box-shadow: 0 0px 2px 0 rgba(0,0,0,.25),0 0px 0px 0 rgba(0,0,0,.2) !important
+}
+.edu span {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+    background-color: #28a745;
+    padding: 3px;
+    border-radius: 4px;  
+}
+.exp{
+    flex-basis: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    max-width: 500px;
+    padding: 30px!important;
+    margin-left: 12px !important;
+    box-shadow: 0 0px 2px 0 rgba(0,0,0,.25),0 0px 0px 0 rgba(0,0,0,.2) !important
+}
+.exp span {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+    background-color: #28a745;
+    padding: 3px;
+    border-radius: 4px;  
+}
+/* FIM SOBRE ME */
+/* ==================================================== */
+	/* HABILIDADES */
+/* ==================================================== */
