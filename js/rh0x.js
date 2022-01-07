@@ -1,3 +1,8 @@
+function clicar(){
+  const hambegerBtn = document.getElementsByClassName("btn-hamburger")[0]
+  const navLinks = document.getElementsByClassName("menu")[0]
+    navLinks.classList.toggle("active")
+}
 function MostarMais() {
     var dots = document.getElementById("dots");
     var moreText = document.getElementById("more");
@@ -13,3 +18,4 @@ function MostarMais() {
             moreText.style.display = "inline";
           }
         }
+
