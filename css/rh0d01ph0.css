@@ -262,6 +262,9 @@ html{
     animation-direction: alternate;
     animation-iteration-count: infinite;
 }
+#seta a{
+    color: white;
+}
 #s1{
     font-size: 50px;
 }
