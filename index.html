@@ -18,17 +18,21 @@
     
 </head>
 
-<!--===========================================================================================-->
-        <!--HEADER NAV-->
-<!--===========================================================================================-->
+<!--INICIO NAV-->
+
 <body>
     <main>
         <header>
             <nav>
                 <div class="header-nav-container">
                     <div class="logo-topo">
-                      <a href="https://roxlmz.github.io/"><h1 class="logo">..:&lt/Hr0x:lmzZ&gt:..</h1></a>
+                        <h1 class="logo">..:&lt/Hr0x:lmzZ&gt:..</h1>
                     </div>
+                    <a href="#" class="btn-hamburger" onclick="clicar()">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </a>
                     <div class="menu">
                         <a href="sobre.html" title="About" class="btns-menu">Sobre</a>
                         <a href="#" title="Trabalhos" class="btns-menu">Trabalhos</a>
@@ -38,12 +42,12 @@
                 </div>
             </nav>
         </header>
-<!--FIM HEADER NAV-->
-        
-<!--===========================================================================================-->
-        <!--HERO BANNER-->
-<!--===========================================================================================-->
-        <section class="me-container">
+
+<!--INICIO NAV-->
+
+<!--INICIO HERO BANNER-->
+
+<section class="me-container">
     <div class="avatar">
         <img src="imagens/rhox.jpg" alt="Rodolfo Lemos">
     </div>
@@ -58,26 +62,26 @@
             <a href="#" class="fa fa-instagram"></a>
             <a href="#" class="fa fa-facebook"></a>
         </div>
-        <div id="buttons">
+        <div class="buttons">
             <a href="#about" id="b1" class="btn-hero">
-            <span><i class="fa fa-user"></i>about</span></a>
+            <span><i id="btn-icon" class="fa fa-user"></i>about</span></a>
             <a href="#contact" id="b2" class="btn-hero">
-            <span><i class="fa fa-rocket"></i>portfolio</span></a>
+            <span><i id="btn-icon2" class="fa fa-rocket"></i>portfolio</span></a>
         </div>
     </div>
     <div id="seta">
-        <a href="#sobre"> <i class="fa fa-arrow-down" id="s1" aria-hidden="true"></i></a>
+       <a href="#sobre"> <i class="fa fa-arrow-down" id="s1" aria-hidden="true"></i></a>
     </div>
 </section>
+
 <!--FIM HERO BANNER-->
-        
-<!--===========================================================================================-->
-        <!--SOBRE ME--> 
-<!--===========================================================================================-->
+
+<!--INICIO SEÇÃO ABOUT-->
 <section class="sobre-me" id="sobre">
     <div class="titulo-sobre-me">
         <h4 class="h4-sobre-me">Sobre Me</h4>
     </div>
+
     <div class="discri">
         <p>Programador, apaixonado por <em>segurança da informação</em> cursando Sistemas De Informação na <a href="https://www.unp.br/" target="_blank"> UnP</a> (universidade potiguar) e especialista em TI pela eSecurity. Como mas de 6 anos de experincia como freelance em suporte técnico de T.I e atendimento ao cliente. Familiarizado com os principais sistemas operacionais (Windows/Linux).
         Tenho plena confiança na minha capacidade de aprender e de resolver problemas. Nas palavras do Irongreek <em>“Não sei tudo — sou apenas um geek com tempo nas mãos”</em></p>
@@ -91,6 +95,7 @@
         </div>
     </div>
 </section>
+
 <section class="experiencia-educacao">
     <div class="edu">
         <h5>Educação</h5>
@@ -107,6 +112,7 @@
             <p>CECyber - (setembro/2021) 25 horas</p>
         </div>
     </div>
+
         <div class="exp">
         <h5>Experiência</h5>
         <div>
@@ -119,11 +125,10 @@
         </div>
         </div>
 </section>
- <!--FIM SOBRE ME-->
+<!--FIM SEÇÃO ABOUT-->
 
-<!--===========================================================================================-->
-        <!--HABILIDADES--> 
-<!--===========================================================================================-->
+<!--HABILIDADES-->
+
 <section class="habilidades">
     <div class="titulo-habilidades">
         <h4 class="h4-habilidades">Habilidades</h4>
@@ -136,7 +141,9 @@
         <div class="card-info">
             <p>Com + de 6 anos de experiência em tarefas diárias de suporte de TI, incluindo atendimento ao cliente, montagem e manutenção de computadores, redes em diferentes sistemas operacionais. Proativo, de boa comunicação oral e escrita, presta um suporte técnico ágil e de bom relacionamento com os membros de sua equipe e seus clientes.</p>
         </div>
+
     </div>
+
     <div class="cyber">
         <div class="card-title">
             <h6>Analista de Cibersegurança.</h6>
@@ -144,7 +151,9 @@
         <div class="card-info">
             <p>Com sólido conhecimento da infraestrutura de TI (incluindo redes, hardware e software) entende completamente os pontos de ataques cibernéticos, malwares e o comportamento dos criminosos cibernéticos, monitorando redes e sistemas ('eventos'),  para antecipar e prevenir esses ataques. Buscando ativa e continuamente maneiras de aprimorar segurança de redes e proteger suas informações.</p>
         </div>
+
     </div>
+
     <div class="dev">
         <div class="card-title">
             <h6>Software Developer.</h6>
@@ -155,12 +164,9 @@
     </div>
 </div>
 </section>
- <!--FIM HABILIDADES-->
+<!--FIM - HABILIDADES-->
 
-<!--===========================================================================================-->
-        <!--QUALIFICACOES--> 
-<!--===========================================================================================-->
-
+<!--QUALIFICACOES-->
 <section class="qualificacoes">
     <h5>Qualificações</h5>
     <div>
@@ -206,14 +212,25 @@
 </section>
 <!--FIM QUALIFICACOES-->
 
-<!--===========================================================================================-->
-        <!--TRABALHOS--> 
-<!--===========================================================================================-->
+<!--TRABALHOS-->
 <section class="trabalhos">
     <div class="titulo-trabalhos">
         <h4 class="h4-trabalhos">Trabalhos</h4>
     </div>
+    <!--CARD 1-->
     <div class="tra-cards">
+        <div class="tra-card">
+        <div class="card-conteudo">
+            <img src="imagens/teste.jpg" alt="rhoxlmz_Blog" style="width:100%;">
+            <h3 class="t-card">Meu Card</h3>
+                <p class="p-card">Esse sera o card do meu bog para apresentar os meus trabalhos que tenho feito atraves de todos esse dias e anos que ja se passsaram</p>
+                <div class="div-bnt">
+                    <a href="#">Conhecer!</a>
+                </div>
+        </div>
+         </div>
+<!--CARD 2-->
+    
         <div class="tra-card">
         <div class="card-conteudo">
             <img src="imagens/teste.jpg" alt="rhoxlmz_Blog" style="width:100%;">
@@ -228,10 +245,7 @@
 </section>
 <!--FIM TRABALHOS-->
 
-<!--===========================================================================================-->
-        <!--CONTATO--> 
-<!--===========================================================================================-->
-        
+<!--CONTATO-->
 <section class="contato">
     <div class="titulo-contato">
         <h4 class="h4-contato">Contato</h4>
@@ -240,15 +254,12 @@
         <p>Minha caixa de entrada esta sempre aberta. Sinta-se á vontade para entrar em contato comigo. Quer Você tenha uma pergunta, discutir novos projetos, ou queira apenas dizer um oi, farei o possível para entrar um contato. Quero uma oportunidade de fazer parte de suas ideias e visões.</p>
     </div>
     <div >
-        <a href="mailto:rhodolpho0@gmail.com?subject=Olá, Eu vim do Github!" class="btn-contato">Entrar em contato</a>
+        <a href="mailto:rhodolpho0@gmail.com?subject=Say hi!" class="btn-contato">Entrar em contato</a>
     </div>
 </section>
-
 <!--FIM CONTATO-->
 
-<!--===========================================================================================-->
-        <!--FOOTER--> 
-<!--===========================================================================================-->
+<!--FOOOTER-->
 <footer class="footer">
     <div class="footer-container">
       <div class="footer-logo">
@@ -271,7 +282,11 @@
       </div>
     </div>
   </footer>
-<!--FIM FOOTER--> 
+<!--FIM FOOTER-->
     </main>
+    <script>
+        
+
+    </script>
 </body>
 </html>
