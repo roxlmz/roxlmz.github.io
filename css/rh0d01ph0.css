@@ -437,6 +437,11 @@ h4::after{
     background-color: #101815;
     padding-top: 20px;
 }
+.habilidades a{
+    text-decoration: none;
+    color: blue;
+    font-weight: 600;
+}
 .cards{
     display: flex;
     flex-direction: row;
@@ -672,6 +677,9 @@ h4::after{
     text-decoration: none;
     color: blue;
     font-weight: 600;
+}
+.design{
+    text-transform: uppercase;
 }
 
 @media only screen and (max-width: 674px){
