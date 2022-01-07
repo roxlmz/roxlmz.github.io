@@ -5,19 +5,26 @@
     list-style: none;
     box-sizing: border-box;    
 }
-a {
-    text-decoration: none;
-    color: white;
-}
-
 html{
     scroll-behavior: smooth;
 }
 
-/* ==================================================== */
-	/* HEADER NAV*/
-/* ==================================================== */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #64bd00; 
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #28a745; 
+  }
 
+
+/* INICIO header nav */
 
 .header-nav-container{
     display: flex;
@@ -46,11 +53,11 @@ html{
     -o-transition:  0.5s ease-in-out; 
 }
 .menu{
+    display: flex;
     word-spacing: 15px;
     color: #fff;
 }
 .menu a{
-    display: inline;
     color: #fff;
     font-family: "Poppins", sans-serif;
     cursor: pointer;
@@ -72,11 +79,33 @@ html{
 .btns-menu:active {
     background: #64bd00; 
 }
-/* FIM HEADER NAV */
+
+/* MOBILE MENU */
+
+.btn-hamburger{
+    position: absolute;
+    top: 17px;
+    right: 18px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 31px;
+    height: 20px;
+}
+
+.btn-hamburger .bar{
+    width: 100%;
+    height: 4px;
+    background-color: white;
+    border-radius: 10px;
+}
+/* FIM header nav */
 
 /* ==================================================== */
-	/* HERO BANNER */
 /* ==================================================== */
+
+/* INICIO hero banner */
+
 .me-container{
     display: flex;
     flex-direction: row;
@@ -104,21 +133,25 @@ html{
     margin-left: 50px !important;
     color: #fff
 }
+
 .h2-perfil{
     font-family: 'Roboto', sans-serif; 
     margin-bottom: 10px;
 }
+
 .h3-perfil{
     color: #ffffff;
     font-size: 45px;
     letter-spacing: 1px;
     margin: 0 0 15px;
 }
+
 .h3-perfil span{
     color: #64bd00;
     font-family: 'Roboto', sans-serif; 
     font-weight: 600;
 }
+
 #perfil p{
     font-family: "Roboto", sans-serif;
     color: #ffffff;
@@ -142,6 +175,7 @@ html{
     transition: opacity 0.3s ease-in-out;
     opacity: 1;
 }
+
 .fa:hover {
     opacity: 0.5;
     transition: opacity 0.3s ease-in-out;
@@ -149,48 +183,59 @@ html{
     -moz-transition: opacity 0.3s ease-in-out;
     -o-transition: opacity 0.3s ease-in-out;
 }
+
 .fa-linkedin {
     background: #007bb5;
     color: white;
 }
+
 .fa-github{
     background: #282828;
     color: white;
 }
+
 .fa-twitter {
     background: #55ACEE;
     color: white;
 }
+
 .fa-instagram {
     background: #e3006f;
     color: white;
 }
+
 .fa-facebook {
     background: #3B5998;
     color: white;
 }
-#buttons{
+
+.buttons{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 .btn-hero{
-     font-family: 'Poppins', sans-serif;
-     color: #fff;
-     background-color: #666666;
-     text-align: center;
-     padding: 1px 15px 0px 0px;
-     cursor: pointer;
-     border-radius: 5px;
-     font-size: 15px;
-     font-weight: 600;
-     letter-spacing: 0.5;
-     text-transform: uppercase;
-     overflow: hidden;
-     transition: opacity 0.3s ease-in-out;
-     opacity: 1;
-     margin-left: 10px;
-     margin-bottom: 10px;
+    
+    margin: 0px 10px 0px 0px;
+    padding: 10px 40px 10px 0px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background-color: #666666;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.5;
+    text-transform: uppercase;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+#btn-icon{
+    padding: 0px 10px 0px 0px;
+}
+#btn-icon2{
+   padding: 0px 5px 0px 0px;
 }
 #b2{
     background-color: #64bd00;
@@ -219,7 +264,6 @@ html{
 }
 #s1{
     font-size: 50px;
-    color: white;
 }
 
 @keyframes seta {
@@ -230,11 +274,12 @@ html{
 		transform: translateX(0);
 	}
 }
-/* FIM HERO BANNER */
+/* FIM hero banner */
 
 /* ==================================================== */
-	/* SOBRE ME */
+            /* INICIO SEÇÃO ABOUT */
 /* ==================================================== */
+
 .titulo-sobre-me h4{
     font-family: "Roboto", sans-serif;
     font-size: 50px;
@@ -251,10 +296,18 @@ h4::after{
     margin: 10px auto;
     border-radius: 50px;
 }
-.discri{
+
+.sobre-me{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     width: 980px;
+    margin: 0 auto;  
+}
+.discri{
     background-color: #fff;
-    margin: 0 auto 20px !important;;
+    margin: 0 auto 20px !important;
     justify-content: center;
     font-family: sans-serif;
     line-height: 30px;
@@ -264,10 +317,11 @@ h4::after{
     text-justify: inter-word;
     margin-bottom: 50px !important;
 }
+
 .discri a{
-   text-decoration: none;
-   color: blue;
-   font-weight: 600;
+        text-decoration: none;
+        color: blue;
+        font-weight: 600;
 }
 .discri > p > a:hover{
     background: #64bd00;
@@ -308,9 +362,8 @@ h4::after{
     font-size: 16px;
     text-align: justify;
     text-justify: inter-word;
-    margin-bottom: 50px;
+    margin-bottom: 50px; /* >>>>> REMOVER <<<<<<< */
 }
-
 .experiencia-educacao h5{
     font-family: "Roboto", sans-serif;
     text-align: center;
@@ -356,9 +409,9 @@ h4::after{
     padding: 3px;
     border-radius: 4px;  
 }
-/* FIM SOBRE ME */
+/* FIM SEÇÃO ABOUT */
 /* ==================================================== */
-	/* HABILIDADES */
+            /* HABILIDADES */
 /* ==================================================== */
 .titulo-habilidades h4{
     font-family: "Roboto", sans-serif;
@@ -367,7 +420,6 @@ h4::after{
     font-weight: bold;
     margin: 0;
     text-align: center;
-
 }
 h4::after{
     content: "";
@@ -382,7 +434,6 @@ h4::after{
     background-color: #101815;
     padding-top: 20px;
 }
-
 .cards{
     display: flex;
     flex-direction: row;
@@ -400,8 +451,7 @@ h4::after{
     text-decoration: underline;
     text-decoration-color: #64bd00;
     text-decoration-style: solid;
-    line-height: 35px;
-    
+    line-height: 35px;  
 }
 .ti, .dev, .cyber{
     font-family: sans-serif;
@@ -422,8 +472,9 @@ h4::after{
 /* FIM HABILIDADES */
 
 /* ==================================================== */
-	/* QUALIFICACOES */
+            /* QUALIFICACOES */
 /* ==================================================== */
+
 .qualificacoes{
     font-family: 'Poppins', sans-serif;
     justify-content: center;
@@ -462,10 +513,9 @@ h4::after{
     text-align: center;
     border-radius: 5px;
 }
-/* FIM QUALIFICACOES */
 
 /* ==================================================== */
-	/* TRABALHOS */
+            /* TRABALHOS */
 /* ==================================================== */
 .titulo-trabalhos h4{
     font-family: "Roboto", sans-serif;
@@ -491,7 +541,6 @@ h4::after{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
 }
 .tra-card{
     width: 300px;
@@ -527,11 +576,12 @@ h4::after{
     border: solid 1px;
     font-weight: 600;
     color: white;
-}
+}      
+
 /* FIM TRABALHOS */
 
 /* ==================================================== */
-	/* CONTATO*/
+            /* CONTATO */
 /* ==================================================== */
 .titulo-contato h4{
     font-family: "Roboto", sans-serif;
@@ -564,7 +614,6 @@ h4::after{
     box-shadow: 0 0px 2px 0 rgb(0 0 0 / 25%), 0 0px 0px 0 rgb(0 0 0 / 20%)!important;
 }
 .txt-contato{
-    width: 700px;
     margin: 0 auto;
     text-align: justify;
     font-family: sans-serif;
@@ -585,17 +634,17 @@ h4::after{
     padding: 10px;
     width: 50%;
     margin: 0 auto;
-
 }
 .btn-contato:hover{
     background-color: #64bd00;;
     color: black;
     border: solid 2px gray;
 }
-/* FIM CONTATO*/
+
+/* FIM CONTATO */
 
 /* ==================================================== */
-	/* FOOTER*/
+            /* FOOTER */
 /* ==================================================== */
 .footer{
     padding: 5px 0 30px;
@@ -612,7 +661,6 @@ h4::after{
     margin-bottom: 0px;
     margin-top: 30px;
     padding-bottom: 15px;
-
 }
 .footer-copyright-design {
     font-size: 12px;
@@ -622,7 +670,46 @@ h4::after{
     color: blue;
     font-weight: 600;
 }
-/* FIM-FOOTER*/
 
+@media only screen and (max-width: 674px){
+    .sobre-me{
+        width: 100%;
+    }
+    .btn-hamburger{
+        display: flex;   
+    }
+    .header-nav-container{
+        justify-content: flex-start;
+    }
+    .menu{
+        display: none;
+        flex-direction: column;
+        text-align: center;
+    }
+    .header-nav-container{
+        display: block;
+        
+    }
+    .menu.active{
+        display: flex;
+    }
+    .buttons{
+        flex-direction: column;
+    }
+    #b2{
+        margin-top: 10px;
 
-
+    }
+    .sobre-me{
+        width: 100%;
+    }
+    .tra-cards{
+        justify-content: center;
+        text-align: center;
+    }  
+}
+@media only screen and (max-width: 854px){
+    #seta{
+        display: none;
+    }
+}
