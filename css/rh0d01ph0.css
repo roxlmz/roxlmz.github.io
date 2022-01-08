@@ -715,6 +715,9 @@ h4::after{
         text-align: center;
         margin-top: 15px;
     }
+    .h3-perfil{
+        text-align: center;
+    }
     #social{
         justify-content: space-around;
     }
