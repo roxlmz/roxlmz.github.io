@@ -105,7 +105,6 @@ html{
 /* ==================================================== */
 
 /* INICIO hero banner */
-
 .me-container{
     display: flex;
     flex-direction: row;
@@ -162,75 +161,57 @@ html{
     margin: 0 0 15px; 
 }
 #social{
-    margin: 15px;
+    display: flex;
+    margin: 20px 0px;
+    justify-content: space-around;
 }
 .fa{
-    padding: 15px;
     font-size: 20px !important;
-    width: 50px;
     text-align: center;
     text-decoration: none;
-    margin: 5px;
     border-radius: 10%;
-    transition: opacity 0.3s ease-in-out;
+    color: white;
+    transition: color 0.3s ease-in-out;
     opacity: 1;
 }
-
-.fa:hover {
-    opacity: 0.5;
-    transition: opacity 0.3s ease-in-out;
-    -webkit-transition: opacity 0.3s ease-in-out;
-    -moz-transition: opacity 0.3s ease-in-out;
-    -o-transition: opacity 0.3s ease-in-out;
+#social .fa:hover {
+    color: #64bd00;
+    transition: color 0.3s ease-in-out;
+    -webkit-transition: color 0.3s ease-in-out;
+    -moz-transition: color 0.3s ease-in-out;
+    -o-transition: color 0.3s ease-in-out;
 }
-
-.fa-linkedin {
-    background: #007bb5;
-    color: white;
-}
-
-.fa-github{
-    background: #282828;
-    color: white;
-}
-
-.fa-twitter {
-    background: #55ACEE;
-    color: white;
-}
-
-.fa-instagram {
-    background: #e3006f;
-    color: white;
-}
-
-.fa-facebook {
-    background: #3B5998;
-    color: white;
-}
-
 .buttons{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
 }
 .btn-hero{
-    
     margin: 0px 10px 0px 0px;
-    padding: 10px 40px 10px 0px;
     font-family: 'Poppins', sans-serif;
     color: #fff;
     background-color: #666666;
     text-align: center;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 26px;
     font-size: 15px;
     font-weight: 600;
     letter-spacing: 0.5;
     text-transform: uppercase;
     opacity: 1;
     transition: opacity 0.3s ease-in-out;
+    padding-bottom: 12px;
+    padding-left: 34px;
+    padding-right: 34px;
+    padding-top: 12px
+}
+.buttons a:hover {
+    color: #ffffff;
+    opacity: 0.5;
+    transition: color 0.3s ease-in-out;
+    -webkit-transition: color 0.3s ease-in-out;
+    -moz-transition: color 0.3s ease-in-out;
+    -o-transition: color 0.3s ease-in-out;
 }
 #btn-icon{
     padding: 0px 10px 0px 0px;
@@ -240,13 +221,6 @@ html{
 }
 #b2{
     background-color: #64bd00;
-}
-.btn-hero:hover {
-    opacity: 0.5;
-    transition: opacity 0.3s ease-in-out;
-    -webkit-transition: opacity 0.3s ease-in-out;
-    -moz-transition: opacity 0.3s ease-in-out;
-    -o-transition: opacity 0.3s ease-in-out;
 }
 #seta{
     position: absolute;
@@ -327,14 +301,6 @@ h4::after{
         color: blue;
         font-weight: 600;
 }
-.discri > p > a:hover{
-    background: #64bd00;
-    padding: 5px;
-    transition: 0.3s ease-in-out;
-    -webkit-transition: 0.3s ease-in-out;
-    -moz-transition: 0.3s ease-in-out;
-    -o-transition: 0.3s ease-in-out;
-}
 .btn-curriculo-sobre-me a{
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
@@ -348,13 +314,22 @@ h4::after{
     border-radius: 5px;
     padding: 10px;
     cursor: pointer;
+    transition: opacity 0.3s ease-in-out;
 }
 .btn-curriculo-sobre-me a:hover{
+    color: #ffffff;
+    opacity: 0.5;
+    transition: color 0.3s ease-in-out;
+    -webkit-transition: color 0.3s ease-in-out;
+    -moz-transition: color 0.3s ease-in-out;
+    -o-transition: color 0.3s ease-in-out;
+/*
     border: solid 1px black;
     transition: 0.3s ease-in-out;
     -webkit-transition: 0.3s ease-in-out;
     -moz-transition: 0.3s ease-in-out;
     -o-transition: 0.3s ease-in-out;
+*/
 }
 .experiencia-educacao{
     display: flex;
@@ -643,11 +618,21 @@ h4::after{
     padding: 10px;
     width: 50%;
     margin: 0 auto;
+    background-color: white;
+    transition: background-color 0.3s ease-in-out;
 }
 .btn-contato:hover{
+    background: #64bd00;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+
+    /*
     background-color: #64bd00;;
     color: black;
-    border: solid 2px gray;
+    border: solid 2px gray; */
+    
 }
 
 /* FIM CONTATO */
@@ -723,8 +708,15 @@ h4::after{
         padding-top: 30px;
     }
     .avatar img {
-        width: 200px;
-        height: 200px;
+        width: 150px;
+        height: 150px;
+    }
+    .h2-perfil{
+        text-align: center;
+        margin-top: 15px;
+    }
+    #social{
+        justify-content: space-around;
     }
 }
 @media only screen and (max-width: 854px){
