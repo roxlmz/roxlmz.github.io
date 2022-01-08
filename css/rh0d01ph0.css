@@ -717,7 +717,14 @@ h4::after{
     .tra-cards{
         justify-content: center;
         text-align: center;
-    }  
+    }
+    .me-container{
+        padding-top: 30px;
+    }
+    .avatar img {
+        width: 200px;
+        height: 200px;
+    }
 }
 @media only screen and (max-width: 854px){
     #seta{
