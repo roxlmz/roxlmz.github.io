@@ -213,6 +213,7 @@ html{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: center;
 }
 .btn-hero{
     
@@ -631,7 +632,7 @@ h4::after{
     text-align: justify;  
 }
 .btn-contato{
-    display: flex;
+    /* display: flex; */
     color: black;
     font-weight: 600;
     font-size: 20px;
