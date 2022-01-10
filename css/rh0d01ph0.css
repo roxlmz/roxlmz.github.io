@@ -761,7 +761,7 @@ h4::after{
 }
 
 @media only screen and (max-width: 674px){
-    .sobre-me{
+    .slideUp{
         width: 100%;
     }
     .btn-hamburger{
@@ -816,41 +816,3 @@ h4::after{
         display: none;
     }
 }
-
-
-.slideUp {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 980px;
-    margin: 0 auto;
-    
-    animation-name: slideUp;
-    -webkit-animation-name: slideUp;
-    animation-duration: 1s;
-    -webkit-animation-duration: 1s;
-    
-      }
-      
-      @keyframes slideUp {
-        0% {
-          opacity: 0;
-          -webkit-transform: translateY(70%);
-        } 
-        100% {
-          opacity: 1;
-          -webkit-transform: translateY(0%);
-        }
-      }
-      
-      @-webkit-keyframes slideUp {
-        0% {
-          opacity: 0;
-          -webkit-transform: translateY(70%);
-        } 
-        100% {
-          opacity: 1;
-          -webkit-transform: translateY(0%);
-        }
-      }
