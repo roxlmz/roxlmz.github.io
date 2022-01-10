@@ -116,6 +116,27 @@ html{
     min-height: 90vh;
     margin-bottom: 50px;
 }
+
+.avatar{
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    
+}
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+    }
+    @keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+    }
+
+
+
 .avatar img{
     width: 300px; 
     height: 300px;
@@ -125,13 +146,42 @@ html{
 #perfil{
     max-width: 500px;
     margin-left: 50px !important;
-    color: #fff
+    color: #fff;
+
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+
 }
-#perfil{
-    max-width: 500px;
-    margin-left: 50px !important;
-    color: #fff
-}
+@-webkit-keyframes fadeInDown {
+    0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    }
+    100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+    }
+    }
+    @keyframes fadeInDown {
+    0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    }
+    100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+    }
+    }
+
+
 
 .h2-perfil{
     font-family: 'Roboto', sans-serif; 
@@ -294,6 +344,11 @@ h4::after{
     text-align: justify;
     text-justify: inter-word;
     margin-bottom: 50px !important;
+}
+
+.discri p{
+    overflow-wrap: anywhere;
+
 }
 
 .discri a{
@@ -696,9 +751,6 @@ h4::after{
     #b2{
         margin-top: 10px;
 
-    }
-    .sobre-me{
-        width: 100%;
     }
     .tra-cards{
         justify-content: center;
