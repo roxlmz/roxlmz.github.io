@@ -214,7 +214,7 @@ html{
     transition: color 0.3s ease-in-out;
     opacity: 1;
 }
-#social, .footer-social .fa:hover {
+#social .fa:hover {
     color: #64bd00;
     transition: color 0.3s ease-in-out;
     -webkit-transition: color 0.3s ease-in-out;
@@ -711,9 +711,18 @@ h4::after{
     display: flex;
     margin: 20px 0px;
     justify-content: center;
+    transition: color 0.3s ease-in-out;
 }
 .footer-social a{
     padding: 15px;
+}
+
+.footer-social a:hover {
+    color: #64bd00;
+    transition: color 0.3s ease-in-out;
+    -webkit-transition: color 0.3s ease-in-out;
+    -moz-transition: color 0.3s ease-in-out;
+    -o-transition: color 0.3s ease-in-out;
 }
 
 .design{
