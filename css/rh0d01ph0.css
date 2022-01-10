@@ -134,9 +134,6 @@ html{
     0% {opacity: 0;}
     100% {opacity: 1;}
     }
-
-
-
 .avatar img{
     width: 300px; 
     height: 300px;
@@ -147,7 +144,6 @@ html{
     max-width: 500px;
     margin-left: 50px !important;
     color: #fff;
-
     -webkit-animation-name: fadeInDown;
     animation-name: fadeInDown;
     -webkit-animation-duration: 1s;
@@ -180,27 +176,21 @@ html{
     transform: none;
     }
     }
-
-
-
 .h2-perfil{
     font-family: 'Roboto', sans-serif; 
     margin-bottom: 10px;
 }
-
 .h3-perfil{
     color: #ffffff;
     font-size: 45px;
     letter-spacing: 1px;
     margin: 0 0 15px;
 }
-
 .h3-perfil span{
     color: #64bd00;
     font-family: 'Roboto', sans-serif; 
     font-weight: 600;
 }
-
 #perfil p{
     font-family: "Roboto", sans-serif;
     color: #ffffff;
@@ -224,7 +214,7 @@ html{
     transition: color 0.3s ease-in-out;
     opacity: 1;
 }
-#social .fa:hover {
+#social, .footer-social .fa:hover {
     color: #64bd00;
     transition: color 0.3s ease-in-out;
     -webkit-transition: color 0.3s ease-in-out;
@@ -707,9 +697,7 @@ h4::after{
 .footer-logo h3 {
     font-family: 'Geostar Fill', cursive;
     color: white;
-    margin-bottom: 0px;
     margin-top: 30px;
-    padding-bottom: 15px;
 }
 .footer-copyright-design {
     font-size: 12px;
@@ -719,6 +707,16 @@ h4::after{
     color: blue;
     font-weight: 600;
 }
+
+.footer-social{
+    display: flex;
+    margin: 20px 0px;
+    justify-content: center;
+}
+.footer-social a{
+    padding: 15px;
+}
+
 .design{
     text-transform: uppercase;
 }
