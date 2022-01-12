@@ -601,41 +601,54 @@ h4::after{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .tra-card{
-    width: 300px;
-    height: 400px;
+    width: 45%;
+    height: 700px !important;
     border: 1px solid black;
     border-radius: 5px;
     margin: 10px;
+    padding: 20px;
 }
 .card-conteudo{
     padding: 10px;
 }
 .t-card{
+    font-family: "Poppins", sans-serif;
     display: block;
-    margin: 15px 0;
-    font-weight: bold;
-    font-size: 25px;
+    margin: 10px 0;
+    font-size: 15px;
+}
+.autor-div h5, .sobre-code h5, .coding h5, .div-link h5{
+    margin: 10px auto;
+    font-family: monospace;
+    font-size: 10px;
+    color: gray
+}
+.autor-div p, .lang{
+    margin-bottom: 5px;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+.autor-div time{
+    margin: 5px auto;
+    font-size: 14px;
 }
 .p-card{
     text-align: justify;
+    margin-top: 5px;
 }
-.div-bnt{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-}
-.div-bnt a{
-    padding: 8px 12px;
-    border-radius: 5px;
-    background-color: #64bd00;
-    font-family: 'Poppins', sans-serif;
-    cursor: pointer;
-    border: solid 1px;
+.Link a{
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #64bd00;
     font-weight: 600;
-    color: white;
+    border-bottom: #64bd00 solid 2px;
+}
+.Link a:hover{
+    border-bottom: blue solid 2px;
 }      
 
 /* FIM TRABALHOS */
@@ -792,6 +805,9 @@ h4::after{
     .tra-cards{
         justify-content: center;
         text-align: center;
+    }
+    .tra-card{
+        width: 100%;
     }
     .me-container{
         padding-top: 30px;
