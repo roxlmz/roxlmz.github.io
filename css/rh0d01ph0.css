@@ -645,7 +645,6 @@ h4::after{
     text-decoration: none;
     color: #64bd00;
     font-weight: 600;
-    border-bottom: #64bd00 solid 2px;
 }
 .Link a:hover{
     border-bottom: blue solid 2px;
