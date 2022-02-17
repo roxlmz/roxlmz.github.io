@@ -1,329 +1,88 @@
-<!DOCTYPE html>
+<!DOCTYPE htlm>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/rh0d01ph0.css">
-    <script src="js/rh0x.js"></script>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Geostar+Fill&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/rh0d01ph0.css" />
 
-    <title>Rodolofo Lemos | Blog</title>
-    <script>
-        window.onscroll = function() {slideUpSobre()};
-    </script>
+    <title>Rodolfo Lemos</title>
+
+    <script defer src="https://kit.fontawesome.com/f719600114.js" crossorigin="anonymous"></script>
 </head>
 
-<!--INICIO NAV-->
-
 <body>
-    <main>
-        <header>
-            <nav>
-                <div class="header-nav-container">
-                    <div class="logo-topo">
-                        <h1 class="logo">..:&lt/Hr0x:lmzZ&gt:..</h1>
-                    </div>
-                    <a href="#" class="btn-hamburger" onclick="clicar()">
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                        <span class="bar"></span>
+    <header>
+        <div class="container-fluid fixed-top px-0">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-black" role="navegation">
+                <div class="container">
+                    <a class="navbar-brand" href="https://roxlmz.github.io/" role="logo">
+                        <h1 class="navbar-logo">..:&lt;/Hr0x:lmzZ&gt;:..</h1>
                     </a>
-                    <div class="menu">
-                        <a href="#sobre" class="btns-menu">Sobre</a>
-                        <a href="#Trabalhos" title="Trabalhos" class="btns-menu">Trabalhos</a>
-                        <a href="#" title="Curriculo" class="btns-menu">Currículo</a>
-                        <a href="#Contato" title="Contato" class="btns-menu">Contato</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-links"
+                        aria-controls="nav-links" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="bi bi-list-ul"></span>
+                    </button>
+                    <div class="navbar-collapse collapse" id="nav-links">
+                        <div class="mbp navbar-nav ms-auto mb-2 mb-lg-0" role="site navegation">
+                            <a class="mask nav-link nav-item nav-item text-white" href="#">
+                                <i class="bi bi-person-lines-fill" role="img" arial-label="about"></i>
+                                Sobre
+                            </a>
+                            <a class="mask nav-link nav-item nav-item text-white" href="#">
+                                <i class="bi bi-briefcase-fill" role="img" arial-label="Works"></i>
+                                Trabalhos
+                            </a>
+                            <a class="mask nav-link nav-item nav-item text-white" href="#">
+                                <i class="bi bi-book-half" role="img" arial-label="history"></i>
+                                Historia
+                            </a>
+                            <a class="mask nav-link nav-item nav-item text-white" href="#">
+                                <i class="bi bi-envelope-plus-fill" role="img" arial-label="contact"></i>
+                                Contato
+                            </a>
+                            <a class="t ms-3 mask download-cv-btn nav-link nav-item nav-item text-white" href="#"
+                                type="button">
+                                Donwload CV
+                                <i class="bi bi-cloud-download-fill" role="img" aria-label="resume"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </nav>
-        </header>
-
-<!--INICIO NAV-->
-
-<!--INICIO HERO BANNER-->
-
-<section class="me-container">
-    <div class="avatar">
-        <img src="imagens/rhox.jpg" alt="Rodolfo Lemos">
-    </div>
-    <div id="perfil">
-        <h2 class="h2-perfil">Olá, Mundo!</h2>
-        <h3 class="h3-perfil">Sou <span> Rodolfo Lemos</span></h3>
-        <p>Freelancer. Desenvolvedor Web, Analista De T.I. e Consultor De Segurança da informação</p>
-        <div id="social">
-            <a href="#" class="fa fa-linkedin"></a>
-            <a href="#" class="fa fa-github"></a>
-            <a href="#" class="fa fa-twitter"></a>
-            <a href="#" class="fa fa-instagram"></a>
-            <a href="#" class="fa fa-facebook"></a>
         </div>
-        <div class="buttons">
-            <a href="#Trabalhos" id="b1" class="btn-hero">
-            <span><i id="btn-icon" class="fa fa-briefcase"></i>Trabalhos</span></a>
-            <a href="#contact" id="b2" class="btn-hero">
-            <span><i id="btn-icon2" class="fa fa-address-book"></i>Curriculo</span></a>
-        </div>
-    </div>
-    <div id="seta">
-       <a href="#sobre"> <i class="fa fa-arrow-down" id="s1" aria-hidden="true"></i></a>
-    </div>
-</section>
-
-<!--FIM HERO BANNER-->
-
-<!--INICIO SEÇÃO ABOUT-->
-<section id="sobre" class="sobre-me">
-    <div class="titulo-sobre-me">
-        <h4 class="h4-sobre-me">Sobre Me</h4>
-    </div>
-
-    <div class="discri">
-        <div>
-        <p>Programador, apaixonado por <em>segurança da informação</em> cursando Sistemas De Informação na <a href="https://www.unp.br/" target="_blank"> UnP</a> (universidade potiguar) e especialista em TI pela eSecurity. Como mas de 6 anos de experincia como freelance em suporte técnico de T.I e atendimento ao cliente. Familiarizado com os principais sistemas operacionais (Windows/Linux).
-        Tenho plena confiança na minha capacidade de aprender e de resolver problemas. Nas palavras do Irongreek <em>“Não sei tudo — sou apenas um geek com tempo nas mãos”</em></p></div>
-        <br>
-        <blockquote>
-        <em> “Sempre faço o que não consigo fazer para aprender o que não sei.”</em>
-        — <strong>Pablo Picasso</strong>
-        </blockquote>
-        <div class="btn-curriculo-sobre-me">
-        <a href="https://google.com" target="_blank">Meu Curriculo</a>
-        </div>
-    </div>
-</section>
-
-<section class="experiencia-educacao">
-    <div class="edu">
-        <h5>Educação</h5>
-        <div>
-            <h6>Sistemas de Informação</h6>
-            <p>Universidade Potiguar - UnP (2020 - <span>Atual</span>)</p>
-        </div>
-        <div>
-            <h6>Advanced Penetration Test</h6>
-            <p>eSecurity - (2019) 120h </p>
-        </div>
-        <div>
-            <h6>Cybersecurity Foundation</h6>
-            <p>CECyber - (setembro/2021) 25 horas</p>
-        </div>
-    </div>
-
-        <div class="exp">
-        <h5>Experiência</h5>
-        <div>
-            <h6>Desenvolvedor Web</h6>
-            <p>rhoxlmz - (01/2019 - <span>Atual</span>)</p>
-        </div>
-        <div>
-            <h6>Suporte Tecnico Em TI</h6>
-            <p>Autônomo</p>
-        </div>
-        </div>
-</section>
-<!--FIM SEÇÃO ABOUT-->
-
-<!--HABILIDADES-->
-
-<section class="habilidades">
-    <div class="titulo-habilidades">
-        <h4 class="h4-habilidades">Habilidades</h4>
-    </div>
- <div class="cards">
-    <div class="ti">
-        <div class="card-title">
-            <h6>Especialista Em TI.</h6>
-        </div>
-        <div class="card-info">
-            <p>Com + de <b>6 anos de experiência</b> em tarefas diárias de <em>suporte de TI</em>, incluindo atendimento ao cliente, montagem e manutenção de computadores, redes em diferentes sistemas operacionais. Proativo, de boa comunicação oral e escrita, presta um suporte técnico ágil e de bom relacionamento com os membros de sua equipe e seus clientes.</p>
-        </div>
-
-    </div>
-
-    <div class="cyber">
-        <div class="card-title">
-            <h6>Analista de Cibersegurança.</h6>
-        </div>
-        <div class="card-info">
-            <p>Com sólido conhecimento da <b> infraestrutura de TI</b> (incluindo redes, hardware e software) entende completamente os pontos de <em> ataques cibernéticos, malwares e o comportamento dos criminosos cibernéticos, monitorando redes e sistemas ('eventos')</em>, para antecipar e prevenir esses ataques. Buscando ativa e continuamente maneiras de aprimorar <em>segurança de redes</em> e proteger suas informações.</p>
-        </div>
-
-    </div>
-
-    <div class="dev">
-        <div class="card-title">
-            <h6>Software Developer.</h6>
-        </div>
-        <div class="card-info">
-            <p>Nômade digital, autodidata, autor de pequenos projetos pessoais. Desenvolveu todo <a href="https://roxlmz.github.io/">rhoxlmz!</a> Com código simples, limpo, interfaces web funcionais, buscando SEMPRE entender que simplicidade e confiança são aspectos importantes na construção de qualquer sistema.</p>
-        </div>
-    </div>
-</div>
-</section>
-<!--FIM - HABILIDADES-->
-
-<!--QUALIFICACOES-->
-<section class="qualificacoes">
-    <h5>Qualificações</h5>
-    <div>
-        <p><span style="font-size:25px;">&#8594; </span>Autodidata de rápida aprendizagem e disposição para trabalhar com tecnologias diferentes e aprender novas tecnologias utilizando cursos online, livros e documentação – <b>AVANÇADO</b></p>
-
-        <p><span style="font-size:25px;">&#8594; </span>Excelentes habilidades analíticas, interpessoais, de comunicação e escrita, capacidade de resolução e resolução de problemas. Altamente motivado e capaz de se adaptar para trabalhar em qualquer novo ambiente – <b>AVANÇADO</b></p>
-
-        <p><span style="font-size:25px;">&#8594; </span> Familiaridade com Runbooks e fluxos de trabalho corporativos – <b>INTERMEDIÁRIO</b></p>
-
-        <p><span style="font-size:25px;">&#8594; </span> Configuração de servidores de rede: DHCP, DNS, HTTP, FTP, Fileserver, Active Directory – <b>BÁSICO</b></p>
-
-        <p><span style="font-size:25px;">&#8594; </span> Desenvolvedor de aplicação WEB (front-end), utilizando todas as metodologiasferramentas adequadas para o bom desenvolvimento das aplicações com conhecimento aprofundado acerca da interação entre usuário e site – <b>INTERMEDIÁRIO</b></p><span id="dots"></span>
-        <span id="more">
-
-        <p><span style="font-size:25px;">&#8594; </span>  Gestão e integração do front-end com o back-end (banco de dados, APIs, ) realizando o planejamento, a criação, a implementação e a manutenção da estrutura que forma a base de uma aplicação WEB – <b>BÁSICO</b></p>
-
-        <p><span style="font-size:25px;">&#8594; </span> Proficiência e operação com servidores Windows e 
-        Linux – <b>BÁSICO</b></p>
-
-        <p><span style="font-size:25px;">&#8594; </span> Correção de problemas na infraestrutura, recuperação de informações e estabelecimento de um plano de backup em nuvem – <b>INTERMEDIÁRIO</b></p>
-
-        <p><span style="font-size:25px;">&#8594; </span> Planejamento, implementação e configuração de uma infraestrutura de TI: máquina virtuais, Switchs, roteador, Vlans, Firewall, Wifi segmentada, etc –<b>BÁSICO</b></p>
-
-        <p><span style="font-size:25px;">&#8594; </span>Capacidade de realizar teste de Segurança de Ofensiva – <b>INTERMEDIÁRIO</b></p>
-
-        <p><span style="font-size:25px;">&#8594; </span> Ferramentas de Segurança – SIEM QRADAR, Firewall Palo Alto, Zenoss Monitoring, Wireshark Packet Analyzer, IPS e IDS Snort, ePO e DLP McAfee – <b>BÁSICO</b> </p>
-
-        <p><span style="font-size:25px;">&#8594; </span>Competente na execução de testes de segurança manual e automatizado para aplicativos móveis e web, baseados em OWASP e CWE/SANS - <b>INTERMEDIÁRIO</b></p>
-
-       <p><span style="font-size:25px;">&#8594; </span> Análise de Incidentes Cibernéticos – <b>INTERMEDIÁRIO</b></p>
-
-       <p><span style="font-size:25px;">&#8594; </span> Contenção de Incidentes Cibernéticos – Cyber Kill Chain – <b>INTERMEDIÁRIO</b></p>
-
-        <p><span style="font-size:25px;">&#8594; </span> Mitigação de Incidentes Cibernéticos
-        – NIST e MITRE – <b>INTERMEDIÁRIO</b></p>
-        <p><span style="font-size:25px;">&#8594; </span> Resposta a Incidentes Cibernéticos – NIST – <b>INTERMEDIÁRIO</b></p>
-
-        <p><span style="font-size:25px;">&#8594; </span> Exposição no simulador “Cyberbit Range” – Cenário real de ataque    cibernético: Apache Shutdown  – <b>INTERMEDIÁRIO</b></p>
-
-        <p><span style="font-size:25px;">&#8594; </span> Prática na revisão e definição de requisitos para soluções de segurança da informação e técnicas de mitigação – <b>INTERMEDIÁRIO</b></p></span>
-    </div>
-<button onclick="MostarMais()" id="mostrar">Mostar +</button>
-</section>
-<!--FIM QUALIFICACOES-->
-
-<!--TRABALHOS-->
-<section class="trabalhos" id="Trabalhos">
-    <div class="titulo-trabalhos">
-        <h4 class="h4-trabalhos">Trabalhos</h4>
-    </div>
-    <!--CARD 1-->
-<div class="tra-cards">
-    <div class="tra-card">
-        <div class="card-conteudo">
-            <a href="https://github.com/roxlmz/Rox_-Blog-_LmZz"> <img src="imagens/rhox_blog.jpg" alt="rhoxlmz_Blog" style="width:100%;"></a>
-            <h3 class="t-card">Rox_-Blog-_LmZz</h3>
-            <div class="autor-div">
-            <h5>Autor</h5>
-            <p>Rodolfo LmzZ</p>
-            <time>01/12/2019</time>
-            </div>
-            <div class="sobre-code">
-                <h5>Sobre</h5>
-            </div>
-            <p class="p-card">Esse é o meu primeiro trabalho que já tiveram mais de 3 versões. :D Se existir algum erro me deixe saber entrando em contato comigo.</p>
-            <div class="coding">
-                <h5>Feito Com</h5>
-            </div>
-            <div class="lang">
-                <p>HTML / CSS / JavaScript</p>
-            </div>
-            <div class="div-link">
-            <h5>Link</h5>
-            </div>
-            <div class="Link">
-                <a href="https://github.com/roxlmz/Rox_-Blog-_LmZz">github</a>
+    </header>
+<main>
+    <section class="min-vh-100 banner-hero">
+    <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+          <div class="avatar">
+            <img src="imagens/rhox.jpg" class="d-block mx-lg-auto img-fluid" alt="rhoxlmz Blog">
             </div>
           </div>
-    </div>
-    <!--CARD 2-->
-    <div class="tra-card">
-        <div class="card-conteudo">
-            <img src="imagens/teste.jpg" alt="rhoxlmz_Blog" style="width:100%;">
-            <h3 class="t-card">Rhox Blog</h3>
-            <div class="autor-div">
-            <h5>Autor</h5>
-            <p>Rodolfo LmzZ</p>
-            <time>01/01/2019</time>
-            </div>
+          <div class="perfil col-lg-6">
+              <h3>Olá, Mundo!</h3>
+              <h2 class="h2-perfil">Sou <span>Rodolfo Lemos</span></h2>
 
-            <div class="sobre-code">
-                <h5>Sobre</h5>
-            </div>
-            <p class="p-card">Esse sera o card do meu bog para apresentar os meus trabalhos que tenho feito atraves de todos esse dias e anos que ja se passsaram</p>
-            <div class="coding">
-                <h5>Feito Com</h5>
-            </div>
-            <div class="lang">
-                <p>HTML / CSS / JavaScript</p>
-            </div>
-            <div class="div-link">
-            <h5>Link</h5>
-            </div>
-            <div class="Link">
-                <a href="https://roxlmz.github.io/">github</a>
+              <!-- RE-ESCREVER O P ABAIXO -->
+
+            <p class="prg">Programador, Analista de Sistemas e Especialista em Segurança da Informação <spam class="blue">Blue</spam>/<spam class="red">Red</spam> team</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <button type="button" class="btn_ btn btn-primary btn-lg px-4 me-md-2 rounded-pill"><i class="bi bi-briefcase-fill" role="img" aria-label="Works"></i> Trabalhos</button>
+              <button type="button" class="btn_ verde-rox text-white btn btn-lg px-4 rounded-pill"><i class="bi bi-tools" role="img" aria-label="service"></i> Meus Serviços</button>
             </div>
           </div>
-    </div>
-</div>
-</section>
-<!--FIM TRABALHOS-->
-
-<!--CONTATO-->
-<section class="contato" id="Contato">
-    <div class="titulo-contato">
-        <h4 class="h4-contato">Contato</h4>
-    </div>  
-    <div class="txt-contato">
-        <p>Minha caixa de entrada esta sempre <b>aberta</b>. Sinta-se á vontade para entrar em <b> contato comigo.</b> Quer Você tenha uma pergunta, discutir novos projetos, ou queira apenas dizer um oi, farei o possível para entrar um contato. <em> Quero uma oportunidade de fazer parte de suas ideias e visões.</em></p>
-    </div>
-    <div style="text-align: center;">
-        <a href="mailto:rhodolpho0@gmail.com?subject=Olá, Eu vim do Github!" class="btn-contato">Entrar em contato</a>
-    </div>
-</section>
-<!--FIM CONTATO-->
-
-<!--FOOOTER-->
-<footer class="footer">
-    <div class="footer-container">
-      <div class="footer-logo">
-        <a href="https://roxlmz.github.io/"><h3>..:&lt/Hr0x:lmzZ&gt:..</h3></a> 
-      </div>
-      <div class="footer-social">
-        <a href="#" class="fa fa-github"></a>
-          <a href="#" class="fa fa-linkedin"></a>
-          <a href="#" class="fa fa-twitter"></a>
-          <a href="#" class="fa fa-facebook"></a>
-          <a href="#" class="fa fa-instagram"></a>
-      </div>
-      <div class="footer-copyright-design">
-        <div class="copyright">
-          Copyright &copy; 2019-<script>document.write(new Date().getFullYear())</script> <a href="https://roxlmz.github.io/">Hr0x:lmzz </a> Todos os direitos reservados.
-        </div>
-        <div class="design">
-            Orgulhosamente Desenvolvido por - Rodolfo Lemos
         </div>
       </div>
-    </div>
-  </footer>
-<!--FIM FOOTER-->
-    </main>
-    <script>
-        
+    </section>
+</main>
 
-    </script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
