@@ -3,112 +3,112 @@
 @import url("https://fonts.googleapis.com/css2?family=Geostar+Fill&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
-:root{
-    --bg-cor-branco: #ffffff;
-    --verde-rox: #64bd00;
-    --verde-hero: #101815;
-    --font-logo: "Geostar Fill", cursive;
+:root {
+  --bg-cor-branco: #ffffff;
+  --verde-rox: #64bd00;
+  --verde-hero: #101815;
+  --font-logo: "Geostar Fill", cursive;
 
-    background-color: var(--bg-cor-branco);
-    font-size: 16px;
+  background-color: var(--bg-cor-branco);
+  font-size: 16px;
 }
-html{
-    background-color: var(--bg-cor-branco);
-    scroll-behavior: smooth;
-}
-
-.verde-rox{
-    background-color: var(--verde-rox);
+html {
+  background-color: var(--bg-cor-branco);
+  scroll-behavior: smooth;
 }
 
-.navbar-logo{
-    font-family: var(--font-logo);
-    font-size: 1.5rem;
-    color: var(--bg-cor-branco);
-    font-weight: 600;
-    letter-spacing: 1px;
-}
-.mask:hover{
-    background-color: var(--verde-rox);
-    transition: 0.5s ease-in-out;
-}
-.download-cv-btn{
-    border: 2px solid var(--verde-rox);
-    outline: none;
-    border-radius: 50px;
-}
-.banner-hero{
-    background-color: var(--verde-hero)
+.verde-rox {
+  background-color: var(--verde-rox);
 }
 
-.alt{
-    height: 48vw !important;
+.navbar-logo {
+  font-family: var(--font-logo);
+  font-size: 1.5rem;
+  color: var(--bg-cor-branco);
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.mask:hover {
+  background-color: var(--verde-rox);
+  transition: 0.5s ease-in-out;
+}
+.download-cv-btn {
+  border: 2px solid var(--verde-rox);
+  outline: none;
+  border-radius: 50px;
+}
+.banner-hero {
+  background-color: var(--verde-hero);
+}
+
+.alt {
+  height: 48vw !important;
 }
 .avatar img {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    border: 5px solid rgba(255,255,255,0.1);
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 5px solid rgba(255, 255, 255, 0.1);
 }
-.perfil h3{
-    font-family: "Roboto", sans-serif;
-    color: #ffffff;
-    font-size: 1.4rem;
-    font-weight: 300;
-}
-
-.perfil h2{
-    font-family: serif;
-    color: #ffffff;
-    font-weight: 600;
-    font-size: 45px;
-    letter-spacing: 1px;
+.perfil h3 {
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  font-size: 1.4rem;
+  font-weight: 300;
 }
 
-.h2-perfil span{
-    color: var(--verde-rox);
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
+.perfil h2 {
+  font-family: serif;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 45px;
+  letter-spacing: 1px;
 }
 
-.prg{
-    color: var(--bg-cor-branco);
-    font-size: 20px;
-    font-weight: 400;
-    letter-spacing: 1px;
-    line-height: 30px;
-    text-align: justify;
+.h2-perfil span {
+  color: var(--verde-rox);
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
 }
 
-.blue{
-    color: blue;
-    font-weight: 600;
+.prg {
+  color: var(--bg-cor-branco);
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 30px;
+  text-align: justify;
 }
 
-.red{
-    color: red;
-    font-weight: 600;
+.blue {
+  color: blue;
+  font-weight: 600;
+}
+
+.red {
+  color: red;
+  font-weight: 600;
 }
 #social .bi {
-    color: white;
-    margin: 0 30px 0 0;
-    font-size: 20px;
+  color: white;
+  margin: 0 30px 0 0;
+  font-size: 20px;
 }
 #social .bi:hover {
-    color: #64bd00;
-    transition: 0.3s ease-in-out;
+  color: #64bd00;
+  transition: 0.3s ease-in-out;
 }
-.btn_{
-    font-family: "Poppins", sans-serif;
-    font-size: 15px;
-    font-weight: 500;
-    letter-spacing: 0.5px;
-    padding: 12px 34px;
-    text-transform: uppercase;
-    text-decoration: none !important;
+.btn_ {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  padding: 12px 34px;
+  text-transform: uppercase;
+  text-decoration: none !important;
 }
-.seta{
-    font-size: 35px;
+.seta {
+  font-size: 25px;
   text-align: center;
   position: absolute;
   left: 0;
@@ -125,19 +125,18 @@ html{
   animation-iteration-count: infinite;
 }
 @keyframes seta {
-    from {
-      transform: translateY(50px);
-    }
-    to {
-      transform: translateX(0);
-    }
+  from {
+    transform: translateY(50px);
   }
-@media only screen and (max-width: 991px){
-    .mbp{
-        text-align: center;
-    }
-    .t{
-        margin-top: .25rem;
-    }
+  to {
+    transform: translateX(0);
+  }
 }
-
+@media only screen and (max-width: 991px) {
+  .mbp {
+    text-align: center;
+  }
+  .t {
+    margin-top: 0.25rem;
+  }
+}
