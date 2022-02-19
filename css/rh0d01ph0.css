@@ -8,6 +8,7 @@
   --verde-rox: #64bd00;
   --verde-hero: #101815;
   --font-logo: "Geostar Fill", cursive;
+  --font-body: "Roboto", sans-serif;
 
   background-color: var(--bg-cor-branco);
   font-size: 16px;
@@ -124,6 +125,65 @@ html {
   animation-direction: alternate;
   animation-iteration-count: infinite;
 }
+
+.Titulos {
+  font-family: "Roboto", sans-serif;
+  font-size: calc(1.375rem + 1.5vw);
+  margin: 0;
+  text-align: center;
+  font-weight: 300;
+}
+.Titulos::after {
+  content: "";
+  width: 150px;
+  height: 5px;
+  background-color: #64bd00;
+  display: block;
+  margin: 10px auto;
+  border-radius: 50px;
+}
+
+
+
+/* teste  */
+
+.btn-outline-success {
+  color: var(--verde-rox);
+  border-color: var(--verde-rox);
+}
+.btn-outline-success:hover {
+  color: #fff;
+  background-color: var(--verde-rox);
+  border-color: var(--verde-rox);
+  transition: 0.5s ease-in-out;
+}
+
+/* teste  */
+
+.m-card {
+  flex-basis: 100%;
+  font-size: 13px;
+  max-width: 500px;
+  padding: 30px !important;
+  margin-right: 12px !important;
+  /* box-shadow: 0 0px 2px 0 rgb(0 0 0 / 25%), 0 0px 0px 0 rgb(0 0 0 / 20%) !important; */
+}
+
+.font-verde-rox{
+  color: var(--verde-rox);
+}
+
+a.link:hover {
+  color: #28a745;
+  text-decoration: underline;
+}
+
+a.disabled {
+  pointer-events: none;
+  cursor: default;
+  opacity: 0.5;
+}
+
 @keyframes seta {
   from {
     transform: translateY(50px);
