@@ -6,6 +6,7 @@
 :root {
   --bg-cor-branco: #ffffff;
   --verde-rox: #64bd00;
+  --verde-seg: #28a745;
   --verde-hero: #101815;
   --font-logo: "Geostar Fill", cursive;
   --font-body: "Roboto", sans-serif;
@@ -143,9 +144,7 @@ html {
   border-radius: 50px;
 }
 
-
-
-/* teste  */
+/* teste botao  */
 
 .btn-outline-success {
   color: var(--verde-rox);
@@ -158,7 +157,7 @@ html {
   transition: 0.5s ease-in-out;
 }
 
-/* teste  */
+/* teste botao  */
 
 .m-card {
   flex-basis: 100%;
@@ -169,8 +168,17 @@ html {
   /* box-shadow: 0 0px 2px 0 rgb(0 0 0 / 25%), 0 0px 0px 0 rgb(0 0 0 / 20%) !important; */
 }
 
-.font-verde-rox{
+.font-verde-rox {
   color: var(--verde-rox);
+}
+
+.destak {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--bg-cor-branco);
+  background-color: var(--verde-seg);
+  padding: 3px;
+  border-radius: 4px;
 }
 
 a.link:hover {
