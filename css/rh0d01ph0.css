@@ -192,6 +192,28 @@ a.disabled {
   opacity: 0.5;
 }
 
+#servicos {
+  background-color: #101815;
+}
+
+.service {
+  text-align: center;
+  color: #ffff;
+}
+
+.service i, .bi-router-fill::before {
+  font-size: 35px;
+  padding: 50px;
+}
+
+.service:hover > i, .service:hover > h4 {
+  color: #64bd00;
+}
+
+.service i, .service h4 {
+  transition: 0.5s;
+}
+
 @keyframes seta {
   from {
     transform: translateY(50px);
