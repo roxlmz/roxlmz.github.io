@@ -213,6 +213,58 @@ a.disabled {
 .service i, .service h4 {
   transition: 0.5s;
 }
+.center {
+  margin: 0 auto;
+}
+.footer {
+  padding: 5px 0 30px;
+  background-color: black;
+  color: white;
+  font-family: sans-serif;
+}
+.footer-container {
+  text-align: center;
+}
+.footer-logo h3 {
+  font-family: var(--font-logo);
+  color: var(--bg-cor-branco);
+  margin-top: 30px;
+}
+.footer-logo > a {
+  text-decoration: none;
+}
+
+.footer-copyright-design {
+  font-size: 12px;
+}
+.copyright a {
+  text-decoration: none;
+  color: blue;
+  font-weight: 600;
+}
+.footer-social {
+  display: flex;
+  margin: 20px 0px;
+  justify-content: center;
+  transition: color 0.3s ease-in-out;
+}
+.footer-social > .bi {
+  color: white;
+}
+.footer-social a {
+  padding: 15px;
+}
+.footer-social a:hover {
+  color: #64bd00;
+  transition: color 0.3s ease-in-out;
+  -webkit-transition: color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+}
+.design {
+  text-transform: uppercase;
+}
+
 
 @keyframes seta {
   from {
