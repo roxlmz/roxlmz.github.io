@@ -76,11 +76,11 @@ html {
 
 .prg {
   color: var(--bg-cor-branco);
-  font-size: 20px;
-  font-weight: 400;
-  letter-spacing: 1px;
-  line-height: 30px;
-  text-align: justify;
+  font-size: 15px;
+  /* font-weight: 400; */
+  /* letter-spacing: 1px; */
+  /* line-height: 30px; */
+  /* text-align: justify; */
 }
 
 .blue {
