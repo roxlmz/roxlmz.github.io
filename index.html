@@ -1,0 +1,1490 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rodolfo Lemos — Analista de TI & Técnico em Telecomunicações</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Portfólio profissional de Rodolfo Lemos — Analista de TI e Técnico em Telecomunicações II com experiência em infraestrutura de redes, segurança eletrônica e suporte técnico. Natal/RN." />
+  <meta name="keywords" content="Rodolfo Lemos, Analista TI, Técnico Telecomunicações, Natal RN, CFTV, Redes, Suporte Técnico, Infraestrutura" />
+  <meta name="author" content="Rodolfo Lemos" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Rodolfo Lemos — Analista de TI & Telecomunicações" />
+  <meta property="og:description" content="Profissional graduado em Sistemas da Informação com experiência em infraestrutura de TI, redes e segurança eletrônica." />
+  <meta property="og:url" content="https://roxlmz.github.io" />
+  <meta property="og:image" content="https://placehold.co/1200x630/0f172a/38bdf8?text=Rodolfo+Lemos" />
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Rodolfo Lemos — Analista de TI & Telecomunicações" />
+  <meta name="twitter:description" content="Portfólio profissional de Rodolfo Lemos — Infraestrutura, Redes e Segurança Eletrônica." />
+  <meta name="twitter:image" content="https://placehold.co/1200x630/0f172a/38bdf8?text=Rodolfo+Lemos" />
+
+  <!-- Favicon (emoji data URI) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🖥️</text></svg>" />
+
+  <!-- Google Fonts: Syne (display) + DM Sans (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['Syne', 'sans-serif'],
+            body: ['DM Sans', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50:  '#f0f9ff',
+              100: '#e0f2fe',
+              200: '#bae6fd',
+              300: '#7dd3fc',
+              400: '#38bdf8',
+              500: '#0ea5e9',
+              600: '#0284c7',
+              700: '#0369a1',
+              800: '#075985',
+              900: '#0c4a6e',
+            },
+            accent: {
+              400: '#34d399',
+              500: '#10b981',
+              600: '#059669',
+            },
+            surface: {
+              light: '#f8fafc',
+              dark:  '#0b1120',
+            }
+          },
+          animation: {
+            'fade-up':   'fadeUp 0.6s ease forwards',
+            'fade-in':   'fadeIn 0.5s ease forwards',
+            'blink':     'blink 0.8s step-end infinite',
+            'float':     'float 3s ease-in-out infinite',
+            'bar-fill':  'barFill 1.2s ease forwards',
+          },
+          keyframes: {
+            fadeUp:  { '0%': { opacity: 0, transform: 'translateY(30px)' }, '100%': { opacity: 1, transform: 'translateY(0)' } },
+            fadeIn:  { '0%': { opacity: 0 }, '100%': { opacity: 1 } },
+            blink:   { '0%,100%': { opacity: 1 }, '50%': { opacity: 0 } },
+            float:   { '0%,100%': { transform: 'translateY(0)' }, '50%': { transform: 'translateY(-10px)' } },
+            barFill: { '0%': { width: '0%' }, '100%': { width: 'var(--pct)' } },
+          },
+          backgroundImage: {
+            'grid-pattern': "url(\"data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2338bdf8' fill-opacity='0.04'%3E%3Cpath d='M0 0h40v1H0zM0 0v40h1V0z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E\")",
+          },
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* ─── Base ─────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; }
+    html { font-family: 'DM Sans', sans-serif; }
+    body { transition: background-color 0.3s, color 0.3s; }
+
+    /* ─── Scrollbar ─────────────────────────────────────── */
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: #38bdf8; border-radius: 3px; }
+
+    /* ─── Section reveal ────────────────────────────────── */
+    .reveal { opacity: 0; transform: translateY(32px); transition: opacity 0.65s ease, transform 0.65s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    /* ─── Gradient text ─────────────────────────────────── */
+    .gradient-text {
+      background: linear-gradient(135deg, #38bdf8 0%, #34d399 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    /* ─── Glow card ─────────────────────────────────────── */
+    .glow-card {
+      position: relative;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .glow-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 0 0 1px rgba(56,189,248,0.35), 0 20px 40px -12px rgba(56,189,248,0.15);
+    }
+
+    /* ─── Skill bar ─────────────────────────────────────── */
+    .skill-bar-fill {
+      height: 100%;
+      border-radius: 9999px;
+      background: linear-gradient(90deg, #0ea5e9, #34d399);
+      width: 0%;
+      transition: width 1.2s cubic-bezier(0.4,0,0.2,1);
+    }
+
+    /* ─── Timeline line ─────────────────────────────────── */
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -1px;
+      top: 28px;
+      bottom: -28px;
+      width: 2px;
+      background: linear-gradient(to bottom, #38bdf8, transparent);
+    }
+    .timeline-item:last-child::before { display: none; }
+
+    /* ─── Nav link underline ────────────────────────────── */
+    .nav-link {
+      position: relative;
+      padding-bottom: 2px;
+    }
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0;
+      width: 0; height: 2px;
+      background: linear-gradient(90deg, #38bdf8, #34d399);
+      transition: width 0.3s ease;
+      border-radius: 2px;
+    }
+    .nav-link:hover::after,
+    .nav-link.active::after { width: 100%; }
+
+    /* ─── Hero noise overlay ────────────────────────────── */
+    .noise-overlay {
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+      background-size: 256px;
+      pointer-events: none;
+    }
+
+    /* ─── Avatar ring ───────────────────────────────────── */
+    .avatar-ring {
+      background: conic-gradient(from 0deg, #38bdf8, #34d399, #0ea5e9, #38bdf8);
+      animation: spin 6s linear infinite;
+      border-radius: 50%;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* ─── Project card image overlay ────────────────────── */
+    .proj-img-wrap { overflow: hidden; border-radius: 12px 12px 0 0; }
+    .proj-img-wrap img { transition: transform 0.5s ease; }
+    .proj-img-wrap:hover img { transform: scale(1.06); }
+
+    /* ─── Mobile menu ────────────────────────────────────── */
+    #mobile-menu { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; }
+    #mobile-menu.open { max-height: 400px; }
+
+    /* ─── Active nav ─────────────────────────────────────── */
+    .nav-link.active { color: #38bdf8; }
+
+    /* ─── Typewriter cursor ──────────────────────────────── */
+    #typewriter::after { content: '|'; animation: blink 0.8s step-end infinite; color: #38bdf8; }
+  </style>
+</head>
+
+<body class="bg-surface-light dark:bg-surface-dark text-slate-800 dark:text-slate-200 font-body antialiased">
+
+<!-- ═══════════════════════════════════════════════════════════
+     STICKY HEADER / NAVIGATION
+══════════════════════════════════════════════════════════════ -->
+<header id="header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6">
+    <nav class="flex items-center justify-between h-16">
+
+      <!-- Logo -->
+      <a href="#hero" class="font-display font-800 text-xl tracking-tight">
+        <span class="gradient-text">Rodolfo</span><span class="text-slate-700 dark:text-slate-300">.tech</span>
+      </a>
+
+      <!-- Desktop nav -->
+      <ul class="hidden md:flex items-center gap-7 text-sm font-medium text-slate-600 dark:text-slate-400">
+        <li><a href="#sobre"       class="nav-link hover:text-brand-400 transition-colors">Sobre</a></li>
+        <li><a href="#experiencia" class="nav-link hover:text-brand-400 transition-colors">Experiência</a></li>
+        <li><a href="#formacao"    class="nav-link hover:text-brand-400 transition-colors">Formação</a></li>
+        <li><a href="#habilidades" class="nav-link hover:text-brand-400 transition-colors">Skills</a></li>
+        <li><a href="#projetos"    class="nav-link hover:text-brand-400 transition-colors">Projetos</a></li>
+        <li><a href="#contato"     class="nav-link hover:text-brand-400 transition-colors">Contato</a></li>
+      </ul>
+
+      <!-- Right controls -->
+      <div class="flex items-center gap-3">
+        <!-- Theme toggle -->
+        <button id="theme-toggle" aria-label="Alternar tema"
+          class="w-9 h-9 rounded-full flex items-center justify-center bg-slate-100 dark:bg-slate-800 hover:bg-brand-100 dark:hover:bg-brand-900 text-slate-600 dark:text-slate-300 transition-colors">
+          <i id="theme-icon" class="fa-solid fa-moon text-sm"></i>
+        </button>
+
+        <!-- Hamburger -->
+        <button id="hamburger" aria-label="Abrir menu" class="md:hidden w-9 h-9 flex flex-col items-center justify-center gap-1.5">
+          <span class="ham-line block w-5 h-0.5 bg-slate-700 dark:bg-slate-300 transition-all origin-center"></span>
+          <span class="ham-line block w-5 h-0.5 bg-slate-700 dark:bg-slate-300 transition-all origin-center"></span>
+          <span class="ham-line block w-5 h-0.5 bg-slate-700 dark:bg-slate-300 transition-all origin-center"></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="md:hidden bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-700 mb-2 overflow-hidden">
+      <ul class="flex flex-col py-2 text-sm font-medium text-slate-700 dark:text-slate-300">
+        <li><a href="#sobre"       class="block px-5 py-3 hover:bg-brand-50 dark:hover:bg-brand-900/20 hover:text-brand-500 transition-colors">Sobre</a></li>
+        <li><a href="#experiencia" class="block px-5 py-3 hover:bg-brand-50 dark:hover:bg-brand-900/20 hover:text-brand-500 transition-colors">Experiência</a></li>
+        <li><a href="#formacao"    class="block px-5 py-3 hover:bg-brand-50 dark:hover:bg-brand-900/20 hover:text-brand-500 transition-colors">Formação</a></li>
+        <li><a href="#habilidades" class="block px-5 py-3 hover:bg-brand-50 dark:hover:bg-brand-900/20 hover:text-brand-500 transition-colors">Skills</a></li>
+        <li><a href="#projetos"    class="block px-5 py-3 hover:bg-brand-50 dark:hover:bg-brand-900/20 hover:text-brand-500 transition-colors">Projetos</a></li>
+        <li><a href="#contato"     class="block px-5 py-3 hover:bg-brand-50 dark:hover:bg-brand-900/20 hover:text-brand-500 transition-colors">Contato</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     HERO SECTION
+══════════════════════════════════════════════════════════════ -->
+<section id="hero" class="relative min-h-screen flex items-center overflow-hidden bg-slate-950 dark:bg-surface-dark">
+
+  <!-- Grid background -->
+  <div class="absolute inset-0 bg-grid-pattern opacity-60"></div>
+  <!-- Noise -->
+  <div class="absolute inset-0 noise-overlay"></div>
+
+  <!-- Radial glow blobs -->
+  <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-brand-500/10 rounded-full blur-3xl pointer-events-none"></div>
+  <div class="absolute bottom-1/4 right-1/4 w-80 h-80 bg-accent-500/8 rounded-full blur-3xl pointer-events-none"></div>
+
+  <div class="relative max-w-6xl mx-auto px-4 sm:px-6 pt-28 pb-20 w-full">
+    <div class="flex flex-col-reverse lg:flex-row items-center gap-12 lg:gap-16">
+
+      <!-- Text -->
+      <div class="flex-1 text-center lg:text-left">
+        <span class="inline-flex items-center gap-2 text-xs font-medium tracking-widest uppercase text-brand-400 bg-brand-400/10 border border-brand-400/20 px-3 py-1.5 rounded-full mb-6 animate-fade-in">
+          <span class="w-1.5 h-1.5 rounded-full bg-accent-400 animate-pulse inline-block"></span>
+          Disponível para novas oportunidades
+        </span>
+
+        <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl font-800 text-white leading-tight mb-4">
+          Olá, sou<br />
+          <span class="gradient-text">Rodolfo Lemos</span>
+        </h1>
+
+        <p class="text-xl sm:text-2xl font-display font-600 text-slate-300 mb-2">
+          <span id="typewriter"></span>
+        </p>
+
+        <p class="text-slate-400 text-base sm:text-lg max-w-xl mx-auto lg:mx-0 mt-3 mb-3 leading-relaxed">
+          Especialista em TI e Automação Inteligente, com sólida atuação em infraestrutura de redes e telecomunicações. <strong class="text-slate-900 dark:text-white">Atuo na criação de agentes capazes de planejar, tomar decisões e executar tarefas complexas de forma independente, reduzindo a carga operacional manual.</strong> Graduado em Sistemas da Informação com foco em resolução ágil de problemas, integro IAs a ecossistemas corporativos (APIs, CRMs e mensageria) para a otimização de processos de ponta a ponta, sem a necessidade de intervenção humana
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
+          <a href="#contato"
+            class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-brand-500 hover:bg-brand-400 text-white font-medium text-sm transition-all duration-200 hover:shadow-lg hover:shadow-brand-500/30 hover:-translate-y-0.5">
+            <i class="fa-solid fa-paper-plane text-xs"></i> Entrar em Contato
+          </a>
+          <a href="javascript:void(0)" id="download-cv"
+            class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl border border-slate-600 hover:border-brand-400 text-slate-300 hover:text-brand-400 font-medium text-sm transition-all duration-200 hover:-translate-y-0.5">
+            <i class="fa-solid fa-download text-xs"></i> Baixar Currículo
+          </a>
+        </div>
+
+        <!-- Social quick links -->
+        <div class="flex items-center gap-4 justify-center lg:justify-start mt-8">
+          <a href="https://github.com/roxlmz" target="_blank" rel="noopener"
+            class="w-9 h-9 rounded-full flex items-center justify-center bg-slate-800 hover:bg-brand-500 text-slate-400 hover:text-white transition-all duration-200 hover:-translate-y-0.5">
+            <i class="fa-brands fa-github text-sm"></i>
+          </a>
+          <a href="https://instagram.com/rodolfolemos0" target="_blank" rel="noopener"
+            class="w-9 h-9 rounded-full flex items-center justify-center bg-slate-800 hover:bg-pink-500 text-slate-400 hover:text-white transition-all duration-200 hover:-translate-y-0.5">
+            <i class="fa-brands fa-instagram text-sm"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/rodolfo-lemos0" target="_blank" rel="noopener"
+            class="w-9 h-9 rounded-full flex items-center justify-center bg-slate-800 hover:bg-blue-500 text-slate-400 hover:text-white transition-all duration-200 hover:-translate-y-0.5">
+            <i class="fa-brands fa-linkedin text-sm"></i>
+          </a>
+          <a href="mailto:rhodolpho0@gmail.com"
+            class="w-9 h-9 rounded-full flex items-center justify-center bg-slate-800 hover:bg-accent-500 text-slate-400 hover:text-white transition-all duration-200 hover:-translate-y-0.5">
+            <i class="fa-solid fa-envelope text-sm"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Avatar -->
+      <div class="flex-shrink-0 flex flex-col items-center gap-4">
+        <div class="relative w-64 h-64 sm:w-80 sm:h-80 animate-float">
+          <!-- Spinning ring -->
+          <div class="avatar-ring absolute -inset-1 p-0.5" style="border-radius:50%">
+            <div class="w-full h-full rounded-full bg-slate-950"></div>
+          </div>
+          <img
+            src="src/img/rod.jpg"
+            alt="Foto de Rodolfo Lemos"
+            class="relative z-10 w-full h-full rounded-full object-cover border-4 border-slate-950"
+          />
+          <!-- Badge -->
+          <span class="absolute -bottom-2 -right-2 z-20 bg-accent-500 text-white text-xs font-bold px-2.5 py-1 rounded-full shadow-lg flex items-center gap-1">
+            <i class="fa-solid fa-shield-halved text-[10px]"></i> 15+ anos
+          </span>
+        </div>
+
+        <!-- Location pill -->
+        <div class="flex items-center gap-2 bg-slate-800/60 backdrop-blur-sm border border-slate-700/50 text-slate-300 text-xs px-4 py-2 rounded-full">
+          <i class="fa-solid fa-location-dot text-brand-400 text-xs"></i>
+          Natal / RN, Brasil
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 opacity-50">
+      <span class="text-slate-500 text-xs tracking-widest uppercase">scroll</span>
+      <div class="w-0.5 h-8 bg-gradient-to-b from-brand-400 to-transparent rounded-full"></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     SOBRE MIM
+══════════════════════════════════════════════════════════════ -->
+<section id="sobre" class="py-24 bg-white dark:bg-slate-900">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6">
+
+    <div class="reveal">
+      <div class="flex items-center gap-3 mb-2">
+        <span class="text-xs font-medium tracking-widest uppercase text-brand-500">Conheça-me</span>
+        <div class="flex-1 h-px bg-gradient-to-r from-brand-500/40 to-transparent"></div>
+      </div>
+      <h2 class="font-display text-3xl sm:text-4xl font-700 text-slate-900 dark:text-white mb-12">Sobre Mim</h2>
+    </div>
+
+    <div class="grid lg:grid-cols-5 gap-12 items-start">
+
+      <!-- Bio -->
+      <div class="lg:col-span-3 reveal">
+        <p class="text-lg leading-relaxed text-slate-600 dark:text-slate-300 mb-6">
+          Sou um profissional de TI com sólida bagagem em infraestrutura de redes, telecomunicações e segurança eletrônica e e também <strong class="text-slate-900 dark:text-white">especialista em Inteligência Artificial, automação e criação de Agentes de IA Autônomos</strong>.
+          Graduado em Sistemas da Informação pela Universidade Potiguar (UNP),
+          construí minha carreira combinando formação acadêmica com experiência prática intensa desde <strong class="text-slate-900 dark:text-white">2009</strong>.
+        </p>
+        <p class="text-base leading-relaxed text-slate-500 dark:text-slate-400 mb-8">
+          Meu diferencial é o perfil <strong class="text-slate-700 dark:text-slate-200">fortemente autodidata</strong>: estudo continuamente
+          novas tecnologias, busco certificações e aplico o conhecimento imediatamente na resolução de problemas reais.
+          Tenho vivência em projetos complexos — da montagem de racks à certificação de redes para a <u><a href="https://www.gov.br/prf/pt-br" target="_blank" rel="noopener">PRF</a></u> (Polícia Rodoviária Federal) —
+          sempre focando em qualidade, documentação e excelência no atendimento.
+        </p>
+
+        <!-- Diferenciais de IA -->
+        <div class="space-y-3 mb-8">
+          <p class="text-xs font-medium tracking-widest uppercase text-brand-500 mb-3">Meus diferenciais em I.A.</p>
+
+          <div class="flex items-start gap-3 p-4 bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/50 rounded-xl">
+            <div class="w-8 h-8 rounded-lg bg-violet-100 dark:bg-violet-900/30 flex items-center justify-center flex-shrink-0 mt-0.5">
+              <i class="fa-solid fa-robot text-violet-500 text-xs"></i>
+            </div>
+            <div>
+              <p class="text-sm font-medium text-slate-800 dark:text-slate-200 mb-0.5">Agentes de IA Autônomos</p>
+              <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">Desenvolvo agentes que planejam, tomam decisões e executam ações de forma independente — como ler um e-mail, consultar um banco de dados e responder ao cliente no WhatsApp, por texto ou voz sem qualquer intervenção humana.</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3 p-4 bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/50 rounded-xl">
+            <div class="w-8 h-8 rounded-lg bg-brand-100 dark:bg-brand-900/30 flex items-center justify-center flex-shrink-0 mt-0.5">
+              <i class="fa-solid fa-plug text-brand-500 text-xs"></i>
+            </div>
+            <div>
+              <p class="text-sm font-medium text-slate-800 dark:text-slate-200 mb-0.5">Automação Inteligente</p>
+              <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">Conecto IA a ferramentas externas — APIs, CRM, WhatsApp, planilhas e outros sistemas — para automatizar processos de ponta a ponta, eliminando tarefas manuais e aumentando a eficiência operacional.</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3 p-4 bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/50 rounded-xl">
+            <div class="w-8 h-8 rounded-lg bg-accent-100 dark:bg-accent-900/30 flex items-center justify-center flex-shrink-0 mt-0.5">
+              <i class="fa-solid fa-brain text-accent-500 text-xs"></i>
+            </div>
+            <div>
+              <p class="text-sm font-medium text-slate-800 dark:text-slate-200 mb-0.5">Engenharia de Prompt e Raciocínio</p>
+              <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">Defino a identidade, os objetivos, o tom de voz e o fluxo de raciocínio de cada agente — garantindo respostas precisas, consistentes e alinhadas ao contexto do negócio.</p>
+            </div>
+          </div>
+        </div>
+
+
+
+        <!-- Status pills -->
+        <div class="flex flex-wrap gap-3">
+          <span class="inline-flex items-center gap-2 text-sm bg-accent-50 dark:bg-accent-900/20 text-accent-700 dark:text-accent-400 border border-accent-200 dark:border-accent-800/50 px-4 py-2 rounded-full">
+            <span class="w-2 h-2 rounded-full bg-accent-500 animate-pulse"></span>
+            Disponível para trabalho
+          </span>
+          <span class="inline-flex items-center gap-2 text-sm bg-brand-50 dark:bg-brand-900/20 text-brand-700 dark:text-brand-400 border border-brand-200 dark:border-brand-800/50 px-4 py-2 rounded-full">
+            <i class="fa-solid fa-laptop text-xs"></i>
+            Presencial & Remoto
+          </span>
+          <span class="inline-flex items-center gap-2 text-sm bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 px-4 py-2 rounded-full">
+            <i class="fa-solid fa-location-dot text-xs"></i>
+            Natal / RN
+          </span>
+        </div>
+      </div>
+
+      <!-- Stats cards -->
+      <div class="lg:col-span-2 grid grid-cols-2 gap-4 reveal">
+        <div class="glow-card bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-2xl p-5 text-center">
+          <div class="font-display text-4xl font-800 gradient-text mb-1">15+</div>
+          <div class="text-xs text-slate-500 dark:text-slate-400 leading-tight">Anos de experiência</div>
+        </div>
+        <div class="glow-card bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-2xl p-5 text-center">
+          <div class="font-display text-4xl font-800 gradient-text mb-1">4</div>
+          <div class="text-xs text-slate-500 dark:text-slate-400 leading-tight">Certificações</div>
+        </div>
+        <div class="glow-card bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-2xl p-5 text-center">
+          <div class="font-display text-4xl font-800 gradient-text mb-1">50+</div>
+          <div class="text-xs text-slate-500 dark:text-slate-400 leading-tight">Projetos concluídos</div>
+        </div>
+        <div class="glow-card bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-2xl p-5 text-center">
+          <div class="font-display text-4xl font-800 gradient-text mb-1">∞</div>
+          <div class="text-xs text-slate-500 dark:text-slate-400 leading-tight">Vontade de aprender</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     EXPERIÊNCIA PROFISSIONAL
+══════════════════════════════════════════════════════════════ -->
+<section id="experiencia" class="py-24 bg-slate-50 dark:bg-surface-dark">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6">
+
+    <div class="reveal">
+      <div class="flex items-center gap-3 mb-2">
+        <span class="text-xs font-medium tracking-widest uppercase text-brand-500">Trajetória</span>
+        <div class="flex-1 h-px bg-gradient-to-r from-brand-500/40 to-transparent"></div>
+      </div>
+      <h2 class="font-display text-3xl sm:text-4xl font-700 text-slate-900 dark:text-white mb-12">Experiência Profissional</h2>
+    </div>
+
+    <div class="relative ml-4 pl-8 border-l-2 border-slate-200 dark:border-slate-700 space-y-0">
+
+      <!-- Item 1 -->
+      <div class="timeline-item relative reveal pb-12">
+        <div class="absolute -left-[41px] top-0 w-5 h-5 rounded-full bg-brand-500 border-4 border-white dark:border-surface-dark shadow-lg shadow-brand-500/30"></div>
+        <div class="glow-card bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700/60 rounded-2xl p-6">
+          <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-3">
+            <div>
+              <h3 class="font-display font-700 text-lg text-slate-900 dark:text-white">Técnico em Telecomunicações II</h3>
+              <div class="flex items-center gap-2 mt-1 text-brand-500 font-medium text-sm">
+                <i class="fa-solid fa-building text-xs"></i>
+                <span>CONECTROM</span>
+              </div>
+            </div>
+            <span class="inline-flex items-center gap-1.5 text-xs text-slate-500 dark:text-slate-400 bg-slate-100 dark:bg-slate-800 px-3 py-1.5 rounded-full whitespace-nowrap self-start">
+              <i class="fa-regular fa-calendar text-[11px]"></i> 2022 — Atual
+            </span>
+          </div>
+          <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-4">
+            Instalação, configuração e manutenção de redes de telecomunicações (Ethernet, Telefonia IP/Analógica).
+            Atendimento de chamadas de clientes de forma remota e presencial. Programação de equipamentos de 
+            telecomunicações: centrais telefônicas, switches, roteadores, APs, SDAI, GPON, CFTV e sistemas de 
+            segurança corporativa. Certificação de infraestrutura de rede garantindo conformidade com padrões de qualidade.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="tech-badge">PABX IP</span>
+            <span class="tech-badge">CFTV</span>
+            <span class="tech-badge">GPON</span>
+            <span class="tech-badge">Cabeamento Estruturado</span>
+            <span class="tech-badge">SDAI</span>
+            <span class="tech-badge">Switches/Roteadores</span>
+            <span class="tech-badge">Certificação Fluke</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="timeline-item relative reveal pb-12">
+        <div class="absolute -left-[41px] top-0 w-5 h-5 rounded-full bg-accent-500 border-4 border-white dark:border-surface-dark shadow-lg shadow-accent-500/30"></div>
+        <div class="glow-card bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700/60 rounded-2xl p-6">
+          <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-3">
+            <div>
+              <h3 class="font-display font-700 text-lg text-slate-900 dark:text-white">Suporte Técnico</h3>
+              <div class="flex items-center gap-2 mt-1 text-accent-500 font-medium text-sm">
+                <i class="fa-solid fa-building text-xs"></i>
+                <span>CONECTROM — Estágio</span>
+              </div>
+            </div>
+            <span class="inline-flex items-center gap-1.5 text-xs text-slate-500 dark:text-slate-400 bg-slate-100 dark:bg-slate-800 px-3 py-1.5 rounded-full whitespace-nowrap self-start">
+              <i class="fa-regular fa-calendar text-[11px]"></i> 2022 (3 meses)
+            </span>
+          </div>
+          <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-4">
+            Suporte técnico para instalação e manutenção de software e hardware. Atendimento de chamadas via Help Desk 
+            (GLPI) e suporte remoto a colaboradores através do AnyDesk. Desenvolvimento de sistema de Manutenção de 
+            Frota (CRUD) em HTML5, CSS3, Bootstrap 5 e PHP.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="tech-badge">Help Desk</span>
+            <span class="tech-badge">GLPI</span>
+            <span class="tech-badge">AnyDesk</span>
+            <span class="tech-badge">PHP</span>
+            <span class="tech-badge">Hardware</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="timeline-item relative reveal">
+        <div class="absolute -left-[41px] top-0 w-5 h-5 rounded-full bg-slate-400 dark:bg-slate-500 border-4 border-white dark:border-surface-dark shadow-lg"></div>
+        <div class="glow-card bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700/60 rounded-2xl p-6">
+          <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-3">
+            <div>
+              <h3 class="font-display font-700 text-lg text-slate-900 dark:text-white">Consultor Técnico Autônomo</h3>
+              <div class="flex items-center gap-2 mt-1 text-slate-500 font-medium text-sm">
+                <i class="fa-solid fa-user-tie text-xs"></i>
+                <span>Clientes Privados — Freelancer</span>
+              </div>
+            </div>
+            <span class="inline-flex items-center gap-1.5 text-xs text-slate-500 dark:text-slate-400 bg-slate-100 dark:bg-slate-800 px-3 py-1.5 rounded-full whitespace-nowrap self-start">
+              <i class="fa-regular fa-calendar text-[11px]"></i> 2009 — Atual
+            </span>
+          </div>
+          <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-4">
+            Prestação de serviços de suporte técnico em TI e segurança eletrônica para clientes corporativos e 
+            residenciais. Diagnóstico e resolução de problemas de hardware/software, montagem de computadores.
+            Estruturação, instalação e manutenção de sistemas de CFTV, controle de acesso e interfonia.
+            Atendimento via telefone, AnyDesk, GLPI e e-mail.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="tech-badge">CFTV</span>
+            <span class="tech-badge">Controle de Acesso</span>
+            <span class="tech-badge">Interfonia</span>
+            <span class="tech-badge">Hardware</span>
+            <span class="tech-badge">Suporte Remoto</span>
+            <span class="tech-badge">Redes</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Tech badge style -->
+<style>
+  .tech-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 3px 10px;
+    font-size: 11px;
+    font-weight: 500;
+    border-radius: 9999px;
+    background: rgba(14,165,233,0.08);
+    color: #0ea5e9;
+    border: 1px solid rgba(14,165,233,0.2);
+    white-space: nowrap;
+  }
+  .dark .tech-badge {
+    background: rgba(56,189,248,0.08);
+    color: #38bdf8;
+    border-color: rgba(56,189,248,0.2);
+  }
+</style>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     FORMAÇÃO ACADÊMICA
+══════════════════════════════════════════════════════════════ -->
+<section id="formacao" class="py-24 bg-white dark:bg-slate-900">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6">
+
+    <div class="reveal">
+      <div class="flex items-center gap-3 mb-2">
+        <span class="text-xs font-medium tracking-widest uppercase text-brand-500">Educação</span>
+        <div class="flex-1 h-px bg-gradient-to-r from-brand-500/40 to-transparent"></div>
+      </div>
+      <h2 class="font-display text-3xl sm:text-4xl font-700 text-slate-900 dark:text-white mb-12">Formação Acadêmica</h2>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-6">
+
+      <!-- Graduação -->
+      <div class="glow-card reveal bg-gradient-to-br from-brand-50 to-slate-50 dark:from-brand-900/10 dark:to-slate-900 border border-brand-100 dark:border-brand-800/30 rounded-2xl p-7">
+        <div class="flex items-start gap-4">
+          <div class="w-12 h-12 rounded-xl bg-brand-500 flex items-center justify-center flex-shrink-0 shadow-lg shadow-brand-500/30">
+            <i class="fa-solid fa-graduation-cap text-white text-lg"></i>
+          </div>
+          <div>
+            <span class="text-xs font-medium tracking-widest uppercase text-brand-500 mb-1 block">Ensino Superior</span>
+            <h3 class="font-display font-700 text-lg text-slate-900 dark:text-white leading-snug">
+              Bacharelado em Sistemas da Informação
+            </h3>
+            <p class="text-slate-600 dark:text-slate-400 text-sm mt-1">Universidade Potiguar — UNP</p>
+            <div class="flex items-center gap-3 mt-3">
+              <span class="text-xs text-slate-500 dark:text-slate-400 flex items-center gap-1.5">
+                <i class="fa-regular fa-calendar text-[11px]"></i> 2020 – 2025
+              </span>
+              <span class="text-xs bg-accent-100 dark:bg-accent-900/30 text-accent-700 dark:text-accent-400 border border-accent-200 dark:border-accent-800/40 px-2.5 py-1 rounded-full font-medium">
+                Concluído
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certificações -->
+      <div class="reveal space-y-3">
+        <h3 class="font-display font-600 text-base text-slate-700 dark:text-slate-300 mb-4 flex items-center gap-2">
+          <i class="fa-solid fa-certificate text-brand-400 text-sm"></i> Certificações
+        </h3>
+
+        <div class="glow-card bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/50 rounded-xl px-5 py-4 flex items-center gap-4">
+          <div class="w-9 h-9 rounded-lg bg-orange-100 dark:bg-orange-900/20 flex items-center justify-center flex-shrink-0">
+            <i class="fa-solid fa-network-wired text-orange-500 text-sm"></i>
+          </div>
+          <div class="flex-1 min-w-0">
+            <p class="font-medium text-sm text-slate-900 dark:text-white truncate">Instalador VDI LCS3 — Legrand</p>
+            <p class="text-xs text-slate-500 dark:text-slate-400">Cabeamento Estruturado · 24h · 2024</p>
+          </div>
+        </div>
+
+        <div class="glow-card bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/50 rounded-xl px-5 py-4 flex items-center gap-4">
+          <div class="w-9 h-9 rounded-lg bg-blue-100 dark:bg-blue-900/20 flex items-center justify-center flex-shrink-0">
+            <i class="fa-solid fa-phone-volume text-blue-500 text-sm"></i>
+          </div>
+          <div class="flex-1 min-w-0">
+            <p class="font-medium text-sm text-slate-900 dark:text-white truncate">Certificação Ision IP — Leucotrom</p>
+            <p class="text-xs text-slate-500 dark:text-slate-400">Telefonia IP · 2025</p>
+          </div>
+        </div>
+
+        <div class="glow-card bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/50 rounded-xl px-5 py-4 flex items-center gap-4">
+          <div class="w-9 h-9 rounded-lg bg-red-100 dark:bg-red-900/20 flex items-center justify-center flex-shrink-0">
+            <i class="fa-solid fa-shield-halved text-red-500 text-sm"></i>
+          </div>
+          <div class="flex-1 min-w-0">
+            <p class="font-medium text-sm text-slate-900 dark:text-white truncate">Advanced Pentest — eSecurity</p>
+            <p class="text-xs text-slate-500 dark:text-slate-400">Segurança da Informação · 120h · 2019</p>
+          </div>
+        </div>
+
+        <div class="glow-card bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/50 rounded-xl px-5 py-4 flex items-center gap-4">
+          <div class="w-9 h-9 rounded-lg bg-green-100 dark:bg-green-900/20 flex items-center justify-center flex-shrink-0">
+            <i class="fa-solid fa-code text-green-500 text-sm"></i>
+          </div>
+          <div class="flex-1 min-w-0">
+            <p class="font-medium text-sm text-slate-900 dark:text-white truncate">Desenvolvedor Full Stack — Dev Samurai</p>
+            <p class="text-xs text-slate-500 dark:text-slate-400">Desenvolvimento Web · 50h · 2021</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     HABILIDADES TÉCNICAS
+══════════════════════════════════════════════════════════════ -->
+<section id="habilidades" class="py-24 bg-slate-50 dark:bg-surface-dark">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6">
+
+    <div class="reveal">
+      <div class="flex items-center gap-3 mb-2">
+        <span class="text-xs font-medium tracking-widest uppercase text-brand-500">Competências</span>
+        <div class="flex-1 h-px bg-gradient-to-r from-brand-500/40 to-transparent"></div>
+      </div>
+      <h2 class="font-display text-3xl sm:text-4xl font-700 text-slate-900 dark:text-white mb-12">Habilidades Técnicas</h2>
+    </div>
+
+    <!-- Skills grid — todas as habilidades em HTML estático -->
+    <div class="grid md:grid-cols-2 gap-4" id="skills-list">
+
+      <!-- 1 -->
+      <div class="reveal glow-card bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700/60 rounded-2xl p-5">
+        <div class="flex items-start gap-3 mb-3">
+          <div class="w-9 h-9 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5" style="background:#0ea5e918">
+            <i class="fa-solid fa-brain text-sm" style="color:#0ea5e9"></i>
+          </div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center justify-between gap-2 flex-wrap">
+              <span class="font-medium text-sm text-slate-800 dark:text-slate-200 leading-snug">Aprendizado Autodidata e Proatividade</span>
+              <div class="flex items-center gap-2 flex-shrink-0">
+                <span class="text-xs border px-2 py-0.5 rounded-full font-medium bg-emerald-50 dark:bg-emerald-900/20 text-emerald-700 dark:text-emerald-400 border-emerald-200 dark:border-emerald-800/40">Avançado</span>
+                <span class="text-xs font-mono text-slate-400 dark:text-slate-500">95%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="h-2 bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden">
+          <div class="skill-bar-fill h-full rounded-full" data-pct="95" style="background:linear-gradient(90deg,#0ea5e9,#0ea5e9aa)"></div>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="reveal glow-card bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700/60 rounded-2xl p-5">
+        <div class="flex items-start gap-3 mb-3">
+          <div class="w-9 h-9 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5" style="background:#0ea5e918">
+            <i class="fa-solid fa-magnifying-glass text-sm" style="color:#0ea5e9"></i>
+          </div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center justify-between gap-2 flex-wrap">
+              <span class="font-medium text-sm text-slate-800 dark:text-slate-200 leading-snug">Resolução de Problemas e Pesquisa Autônoma</span>
+              <div class="flex items-center gap-2 flex-shrink-0">
+                <span class="text-xs border px-2 py-0.5 rounded-full font-medium bg-emerald-50 dark:bg-emerald-900/20 text-emerald-700 dark:text-emerald-400 border-emerald-200 dark:border-emerald-800/40">Avançado</span>
+                <span class="text-xs font-mono text-slate-400 dark:text-slate-500">94%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="h-2 bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden">
+          <div class="skill-bar-fill h-full rounded-full" data-pct="94" style="background:linear-gradient(90deg,#0ea5e9,#0ea5e9aa)"></div>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="reveal glow-card bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700/60 rounded-2xl p-5">
+        <div class="flex items-start gap-3 mb-3">
+          <div class="w-9 h-9 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5" style="background:#0ea5e918">
+            <i class="fa-solid fa-arrows-rotate text-sm" style="color:#0ea5e9"></i>
+          </div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center justify-between gap-2 flex-wrap">
+              <span class="font-medium text-sm text-slate-800 dark:text-slate-200 leading-snug">Autodesenvolvimento e Adaptabilidade</span>
+              <div class="flex items-center gap-2 flex-shrink-0">
+                <span class="text-xs border px-2 py-0.5 rounded-full font-medium bg-emerald-50 dark:bg-emerald-900/20 text-emerald-700 dark:text-emerald-400 border-emerald-200 dark:border-emerald-800/40">Avançado</span>
+                <span class="text-xs font-mono text-slate-400 dark:text-slate-500">94%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="h-2 bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden">
+          <div class="skill-bar-fill h-full rounded-full" data-pct="94" style="background:linear-gradient(90deg,#0ea5e9,#0ea5e9aa)"></div>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="reveal glow-card bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700/60 rounded-2xl p-5">
+        <div class="flex items-start gap-3 mb-3">
+          <div class="w-9 h-9 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5" style="background:#10b98118">
+            <i class="fa-solid fa-network-wired text-sm" style="color:#10b981"></i>
+          </div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center justify-between gap-2 flex-wrap">
+              <span class="font-medium text-sm text-slate-800 dark:text-slate-200 leading-snug">Infraestrutura de Redes (Cabeamento, Firewall, Roteadores, Switches, Wi-Fi)</span>
+              <div class="flex items-center gap-2 flex-shrink-0">
+                <span class="text-xs border px-2 py-0.5 rounded-full font-medium bg-emerald-50 dark:bg-emerald-900/20 text-emerald-700 dark:text-emerald-400 border-emerald-200 dark:border-emerald-800/40">Avançado</span>
+                <span class="text-xs font-mono text-slate-400 dark:text-slate-500">90%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="h-2 bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden">
+          <div class="skill-bar-fill h-full rounded-full" data-pct="90" style="background:linear-gradient(90deg,#10b981,#10b981aa)"></div>
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="reveal glow-card bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700/60 rounded-2xl p-5">
+        <div class="flex items-start gap-3 mb-3">
+          <div class="w-9 h-9 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5" style="background:#10b98118">
+            <i class="fa-solid fa-headset text-sm" style="color:#10b981"></i>
+          </div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center justify-between gap-2 flex-wrap">
+              <span class="font-medium text-sm text-slate-800 dark:text-slate-200 leading-snug">Suporte Técnico — Manutenção Preventiva e Corretiva de Hardware e Periféricos</span>
+              <div class="flex items-center gap-2 flex-shrink-0">
+                <span class="text-xs border px-2 py-0.5 rounded-full font-medium bg-emerald-50 dark:bg-emerald-900/20 text-emerald-700 dark:text-emerald-400 border-emerald-200 dark:border-emerald-800/40">Avançado</span>
+                <span class="text-xs font-mono text-slate-400 dark:text-slate-500">92%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="h-2 bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden">
+          <div class="skill-bar-fill h-full rounded-full" data-pct="92" style="background:linear-gradient(90deg,#10b981,#10b981aa)"></div>
+        </div>
+      </div>
+
+      <!-- 6 -->
+      <div class="reveal glow-card bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700/60 rounded-2xl p-5">
+        <div class="flex items-start gap-3 mb-3">
+          <div class="w-9 h-9 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5" style="background:#10b98118">
+            <i class="fa-solid fa-video text-sm" style="color:#10b981"></i>
+          </div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center justify-between gap-2 flex-wrap">
+              <span class="font-medium text-sm text-slate-800 dark:text-slate-200 leading-snug">Segurança Eletrônica (CFTV, SDAI, Controle de Acesso)</span>
+              <div class="flex items-center gap-2 flex-shrink-0">
+                <span class="text-xs border px-2 py-0.5 rounded-full font-medium bg-emerald-50 dark:bg-emerald-900/20 text-emerald-700 dark:text-emerald-400 border-emerald-200 dark:border-emerald-800/40">Avançado</span>
+                <span class="text-xs font-mono text-slate-400 dark:text-slate-500">88%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="h-2 bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden">
+          <div class="skill-bar-fill h-full rounded-full" data-pct="88" style="background:linear-gradient(90deg,#10b981,#10b981aa)"></div>
+        </div>
+      </div>
+
+      <!-- 7 -->
+      <div class="reveal glow-card bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700/60 rounded-2xl p-5">
+        <div class="flex items-start gap-3 mb-3">
+          <div class="w-9 h-9 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5" style="background:#10b98118">
+            <i class="fa-solid fa-phone-volume text-sm" style="color:#10b981"></i>
+          </div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center justify-between gap-2 flex-wrap">
+              <span class="font-medium text-sm text-slate-800 dark:text-slate-200 leading-snug">Telecomunicações e PABX IP e Analógico</span>
+              <div class="flex items-center gap-2 flex-shrink-0">
+                <span class="text-xs border px-2 py-0.5 rounded-full font-medium bg-emerald-50 dark:bg-emerald-900/20 text-emerald-700 dark:text-emerald-400 border-emerald-200 dark:border-emerald-800/40">Avançado</span>
+                <span class="text-xs font-mono text-slate-400 dark:text-slate-500">87%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="h-2 bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden">
+          <div class="skill-bar-fill h-full rounded-full" data-pct="87" style="background:linear-gradient(90deg,#10b981,#10b981aa)"></div>
+        </div>
+      </div>
+
+      <!-- 8 -->
+      <div class="reveal glow-card bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700/60 rounded-2xl p-5">
+        <div class="flex items-start gap-3 mb-3">
+          <div class="w-9 h-9 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5" style="background:#f59e0b18">
+            <i class="fa-solid fa-shield-halved text-sm" style="color:#f59e0b"></i>
+          </div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center justify-between gap-2 flex-wrap">
+              <span class="font-medium text-sm text-slate-800 dark:text-slate-200 leading-snug">Segurança da Informação — Práticas e Ferramentas de Cibersegurança</span>
+              <div class="flex items-center gap-2 flex-shrink-0">
+                <span class="text-xs border px-2 py-0.5 rounded-full font-medium bg-amber-50 dark:bg-amber-900/20 text-amber-700 dark:text-amber-400 border-amber-200 dark:border-amber-800/40">Intermediário</span>
+                <span class="text-xs font-mono text-slate-400 dark:text-slate-500">65%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="h-2 bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden">
+          <div class="skill-bar-fill h-full rounded-full" data-pct="65" style="background:linear-gradient(90deg,#f59e0b,#f59e0baa)"></div>
+        </div>
+      </div>
+
+      <!-- IA Skills -->
+      <div class="reveal glow-card bg-white dark:bg-slate-900 border border-violet-200 dark:border-violet-800/40 rounded-2xl p-5" style="border-color:rgba(139,92,246,0.3)">
+        <div class="flex items-start gap-3 mb-3">
+          <div class="w-9 h-9 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5" style="background:#8b5cf618">
+            <i class="fa-solid fa-robot text-sm" style="color:#8b5cf6"></i>
+          </div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center justify-between gap-2 flex-wrap">
+              <span class="font-medium text-sm text-slate-800 dark:text-slate-200 leading-snug">Agentes de IA Autônomos (Planejamento e Execução)</span>
+              <div class="flex items-center gap-2 flex-shrink-0">
+                <span class="text-xs border px-2 py-0.5 rounded-full font-medium bg-emerald-50 dark:bg-emerald-900/20 text-emerald-700 dark:text-emerald-400 border-emerald-200 dark:border-emerald-800/40">Avançado</span>
+                <span class="text-xs font-mono text-slate-400 dark:text-slate-500">88%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="h-2 bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden">
+          <div class="skill-bar-fill h-full rounded-full" data-pct="88" style="background:linear-gradient(90deg,#8b5cf6,#8b5cf6aa)"></div>
+        </div>
+      </div>
+
+      <div class="reveal glow-card bg-white dark:bg-slate-900 border border-violet-200 dark:border-violet-800/40 rounded-2xl p-5" style="border-color:rgba(139,92,246,0.3)">
+        <div class="flex items-start gap-3 mb-3">
+          <div class="w-9 h-9 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5" style="background:#8b5cf618">
+            <i class="fa-solid fa-plug text-sm" style="color:#8b5cf6"></i>
+          </div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center justify-between gap-2 flex-wrap">
+              <span class="font-medium text-sm text-slate-800 dark:text-slate-200 leading-snug">Automação Inteligente (APIs, CRM, WhatsApp, Planilhas)</span>
+              <div class="flex items-center gap-2 flex-shrink-0">
+                <span class="text-xs border px-2 py-0.5 rounded-full font-medium bg-emerald-50 dark:bg-emerald-900/20 text-emerald-700 dark:text-emerald-400 border-emerald-200 dark:border-emerald-800/40">Avançado</span>
+                <span class="text-xs font-mono text-slate-400 dark:text-slate-500">85%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="h-2 bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden">
+          <div class="skill-bar-fill h-full rounded-full" data-pct="85" style="background:linear-gradient(90deg,#8b5cf6,#8b5cf6aa)"></div>
+        </div>
+      </div>
+
+      <div class="reveal glow-card bg-white dark:bg-slate-900 border border-violet-200 dark:border-violet-800/40 rounded-2xl p-5" style="border-color:rgba(139,92,246,0.3)">
+        <div class="flex items-start gap-3 mb-3">
+          <div class="w-9 h-9 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5" style="background:#8b5cf618">
+            <i class="fa-solid fa-message text-sm" style="color:#8b5cf6"></i>
+          </div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center justify-between gap-2 flex-wrap">
+              <span class="font-medium text-sm text-slate-800 dark:text-slate-200 leading-snug">Engenharia de Prompt e Raciocínio de IA</span>
+              <div class="flex items-center gap-2 flex-shrink-0">
+                <span class="text-xs border px-2 py-0.5 rounded-full font-medium bg-emerald-50 dark:bg-emerald-900/20 text-emerald-700 dark:text-emerald-400 border-emerald-200 dark:border-emerald-800/40">Avançado</span>
+                <span class="text-xs font-mono text-slate-400 dark:text-slate-500">87%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="h-2 bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden">
+          <div class="skill-bar-fill h-full rounded-full" data-pct="87" style="background:linear-gradient(90deg,#8b5cf6,#8b5cf6aa)"></div>
+        </div>
+      </div>
+
+      <!-- 9 — full width -->
+      <div class="reveal glow-card bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700/60 rounded-2xl p-5 md:col-span-2">
+        <div class="flex items-start gap-3 mb-3">
+          <div class="w-9 h-9 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5" style="background:#8b5cf618">
+            <i class="fa-solid fa-bolt text-sm" style="color:#8b5cf6"></i>
+          </div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center justify-between gap-2 flex-wrap">
+              <span class="font-medium text-sm text-slate-800 dark:text-slate-200 leading-snug">Alta Capacidade de Resolução de Problemas — Motivação e Adaptação a Novos Ambientes</span>
+              <div class="flex items-center gap-2 flex-shrink-0">
+                <span class="text-xs border px-2 py-0.5 rounded-full font-medium bg-emerald-50 dark:bg-emerald-900/20 text-emerald-700 dark:text-emerald-400 border-emerald-200 dark:border-emerald-800/40">Avançado</span>
+                <span class="text-xs font-mono text-slate-400 dark:text-slate-500">99%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="h-2 bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden">
+          <div class="skill-bar-fill h-full rounded-full" data-pct="99" style="background:linear-gradient(90deg,#8b5cf6,#8b5cf6aa)"></div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     PROJETOS DESTACADOS
+══════════════════════════════════════════════════════════════ -->
+<section id="projetos" class="py-24 bg-white dark:bg-slate-900">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6">
+
+    <div class="reveal">
+      <div class="flex items-center gap-3 mb-2">
+        <span class="text-xs font-medium tracking-widest uppercase text-brand-500">Portfolio</span>
+        <div class="flex-1 h-px bg-gradient-to-r from-brand-500/40 to-transparent"></div>
+      </div>
+      <h2 class="font-display text-3xl sm:text-4xl font-700 text-slate-900 dark:text-white mb-6">Projetos Destacados</h2>
+    </div>
+
+    <!-- Filter tabs -->
+    <div class="flex flex-wrap gap-2 mb-10 reveal">
+      <button class="filter-btn active" data-filter="all">Todos</button>
+      <button class="filter-btn" data-filter="ti">T.I.</button>
+      <button class="filter-btn" data-filter="telecom">Telecom</button>
+    </div>
+
+    <!-- Projects grid -->
+    <div id="projects-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Injected by JS -->
+    </div>
+
+  </div>
+</section>
+
+<style>
+  .filter-btn {
+    padding: 7px 18px;
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: 9999px;
+    border: 1px solid;
+    transition: all 0.2s;
+    cursor: pointer;
+    border-color: #e2e8f0;
+    background: transparent;
+    color: #64748b;
+  }
+  .dark .filter-btn { border-color: #334155; color: #94a3b8; }
+  .filter-btn:hover, .filter-btn.active {
+    background: #0ea5e9;
+    border-color: #0ea5e9;
+    color: #fff;
+  }
+</style>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     CONTATO
+══════════════════════════════════════════════════════════════ -->
+<section id="contato" class="py-24 bg-slate-50 dark:bg-surface-dark">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6">
+
+    <div class="reveal">
+      <div class="flex items-center gap-3 mb-2">
+        <span class="text-xs font-medium tracking-widest uppercase text-brand-500">Fale comigo</span>
+        <div class="flex-1 h-px bg-gradient-to-r from-brand-500/40 to-transparent"></div>
+      </div>
+      <h2 class="font-display text-3xl sm:text-4xl font-700 text-slate-900 dark:text-white mb-12">Contato</h2>
+    </div>
+
+    <div class="grid lg:grid-cols-2 gap-12">
+
+      <!-- Info -->
+      <div class="reveal space-y-6">
+        <p class="text-slate-600 dark:text-slate-300 text-lg leading-relaxed">
+          Minha caixa de entrada esta sempre <b>aberta</b>. Sinta-se á vontade para entrar em contato comigo. 
+          Quer Você tenha uma pergunta, discutir <b><u>novos projetos</u></b>, ou queira apenas dizer um oi, Respondo em até 24 horas. 
+          <em>Quero uma oportunidade de fazer parte de suas ideias e visões</em>.
+        </p>
+
+        <div class="space-y-4">
+          <a href="mailto:rhodolpho0@gmail.com?subject=PROPOSTA DE SERVIÇO&amp;body=Olá tudo bem? Vi o seu portifólio e tenho um proposta de trabalho"
+            class="flex items-center gap-4 p-4 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-2xl hover:border-brand-400 dark:hover:border-brand-500 transition-colors group">
+            <div class="w-10 h-10 rounded-xl bg-brand-50 dark:bg-brand-900/20 flex items-center justify-center group-hover:bg-brand-100 dark:group-hover:bg-brand-900/40 transition-colors">
+              <i class="fa-solid fa-envelope text-brand-500 text-sm"></i>
+            </div>
+            <div>
+              <p class="text-xs text-slate-500 dark:text-slate-400 mb-0.5">E-mail</p>
+              <p class="text-sm font-medium text-slate-900 dark:text-white">rhodolpho0@gmail.com</p>
+            </div>
+            <i class="fa-solid fa-arrow-right text-slate-300 dark:text-slate-600 ml-auto group-hover:text-brand-400 transition-colors text-xs"></i>
+          </a>
+
+          <a href="https://github.com/roxlmz" target="_blank" rel="noopener"
+            class="flex items-center gap-4 p-4 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-2xl hover:border-slate-400 dark:hover:border-slate-500 transition-colors group">
+            <div class="w-10 h-10 rounded-xl bg-slate-100 dark:bg-slate-800 flex items-center justify-center group-hover:bg-slate-200 dark:group-hover:bg-slate-700 transition-colors">
+              <i class="fa-brands fa-github text-slate-700 dark:text-slate-300 text-sm"></i>
+            </div>
+            <div>
+              <p class="text-xs text-slate-500 dark:text-slate-400 mb-0.5">GitHub</p>
+              <p class="text-sm font-medium text-slate-900 dark:text-white">github.com/roxlmz</p>
+            </div>
+            <i class="fa-solid fa-arrow-right text-slate-300 dark:text-slate-600 ml-auto group-hover:text-slate-500 transition-colors text-xs"></i>
+          </a>
+
+          <a href="https://www.linkedin.com/in/rodolfo-lemos0" target="_blank" rel="noopener"
+            class="flex items-center gap-4 p-4 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-2xl hover:border-blue dark:hover:border-blue-500 transition-colors group">
+            <div class="w-10 h-10 rounded-xl bg-slate-100 dark:bg-blue-800 flex items-center justify-center group-hover:bg-slate-200 dark:group-hover:bg-blue-700 transition-colors">
+              <i class="fa-brands fa-linkedin text-blue-700 dark:text-blue-300 text-sm"></i>
+            </div>
+            <div>
+              <p class="text-xs text-slate-500 dark:text-slate-400 mb-0.5">Linkedin</p>
+              <p class="text-sm font-medium text-slate-900 dark:text-white">linkedin.com/in/rodolfo-lemos0</p>
+            </div>
+            <i class="fa-solid fa-arrow-right text-slate-300 dark:text-slate-600 ml-auto group-hover:text-slate-500 transition-colors text-xs"></i>
+          </a>
+
+          <a href="https://instagram.com/rodolfolemos0" target="_blank" rel="noopener"
+            class="flex items-center gap-4 p-4 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-2xl hover:border-pink-400 dark:hover:border-pink-500 transition-colors group">
+            <div class="w-10 h-10 rounded-xl bg-pink-50 dark:bg-pink-900/20 flex items-center justify-center group-hover:bg-pink-100 dark:group-hover:bg-pink-900/40 transition-colors">
+              <i class="fa-brands fa-instagram text-pink-500 text-sm"></i>
+            </div>
+            <div>
+              <p class="text-xs text-slate-500 dark:text-slate-400 mb-0.5">Instagram</p>
+              <p class="text-sm font-medium text-slate-900 dark:text-white">@rodolfolemos0</p>
+            </div>
+            <i class="fa-solid fa-arrow-right text-slate-300 dark:text-slate-600 ml-auto group-hover:text-pink-400 transition-colors text-xs"></i>
+          </a>
+          <a href="https://maps.app.goo.gl/HmC6LbiJ4GoyCPYW8" target="_blank" rel="noopener"
+            class="flex items-center gap-4 p-4 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-2xl hover:border-emerald-400 dark:hover:border-emerald-500 transition-colors group">
+            <div class="w-10 h-10 rounded-xl bg-emerald-50 dark:bg-emerald-900/20 flex items-center justify-center group-hover:bg-emerald-100 dark:group-hover:bg-emerald-900/40 transition-colors">
+              <i class="fa-solid fa-location-dot text-emerald-500 text-sm"></i>
+            </div>
+            <div>
+              <p class="text-xs text-slate-500 dark:text-slate-400 mb-0.5">Localização</p>
+              <p class="text-sm font-medium text-slate-900 dark:text-white">Natal / RN — Brasil</p>
+            </div>
+            <i class="fa-solid fa-arrow-right text-slate-300 dark:text-slate-600 ml-auto group-hover:text-emerald-400 transition-colors text-xs"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <div class="reveal">
+        <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700/60 rounded-2xl p-8">
+          <h3 class="font-display font-600 text-lg text-slate-900 dark:text-white mb-6">Enviar Mensagem</h3>
+          <form id="contact-form" action="https://formspree.io/f/xknyrowq" method="POST" class="space-y-4">
+
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-medium text-slate-600 dark:text-slate-400 mb-1.5" for="cf-nome">Nome *</label>
+                <input id="cf-nome" type="text" name="nome" placeholder="Seu nome" required
+                  class="w-full px-4 py-2.5 text-sm rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:border-brand-400 focus:ring-2 focus:ring-brand-400/20 transition" />
+              </div>
+              <div>
+                <label class="block text-xs font-medium text-slate-600 dark:text-slate-400 mb-1.5" for="cf-email">E-mail *</label>
+                <input id="cf-email" type="email" name="email" placeholder="seu@email.com" required
+                  class="w-full px-4 py-2.5 text-sm rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:border-brand-400 focus:ring-2 focus:ring-brand-400/20 transition" />
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-medium text-slate-600 dark:text-slate-400 mb-1.5" for="cf-assunto">Assunto *</label>
+              <input id="cf-assunto" type="text" name="assunto" placeholder="Sobre o que gostaria de conversar?" required
+                class="w-full px-4 py-2.5 text-sm rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:border-brand-400 focus:ring-2 focus:ring-brand-400/20 transition" />
+            </div>
+
+            <div>
+              <label class="block text-xs font-medium text-slate-600 dark:text-slate-400 mb-1.5" for="cf-msg">Mensagem *</label>
+              <textarea id="cf-msg" name="mensagem" rows="4" placeholder="Sua mensagem..." required
+                class="w-full px-4 py-2.5 text-sm rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:border-brand-400 focus:ring-2 focus:ring-brand-400/20 transition resize-none"></textarea>
+            </div>
+
+            <button id="form-submit" type="submit"
+              class="w-full py-3 rounded-xl bg-brand-500 hover:bg-brand-400 text-white font-medium text-sm transition-all duration-200 hover:shadow-lg hover:shadow-brand-500/30 flex items-center justify-center gap-2">
+              <i class="fa-solid fa-paper-plane text-xs"></i> Enviar Mensagem
+            </button>
+
+            <p id="form-feedback" class="text-center text-sm hidden"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     FOOTER
+══════════════════════════════════════════════════════════════ -->
+<footer class="bg-slate-950 text-slate-400 py-10">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm">
+    <div>
+      <span class="font-display font-700 text-white text-base">Rodolfo Lemos</span>
+      <span class="mx-2 opacity-30">—</span>
+      <span>Analista de TI &amp; Técnico em Telecomunicações</span>
+    </div>
+    <div class="text-center text-xs">
+      <span>© 2019-<span id="footer-year"></span> · Orgulhosamente desenvolvido por </span>
+      <a href="https://github.com/roxlmz" target="_blank" rel="noopener"
+        class="text-brand-400 hover:text-brand-300 font-medium transition-colors">Rodolfo Lemos (RoxLmz)</a>
+    </div>
+  </div>
+</footer>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     BACK TO TOP
+══════════════════════════════════════════════════════════════ -->
+<button id="back-to-top" aria-label="Voltar ao topo"
+  class="fixed bottom-6 right-6 z-50 w-11 h-11 rounded-full bg-brand-500 hover:bg-brand-400 text-white flex items-center justify-center shadow-lg shadow-brand-500/30 transition-all duration-300 opacity-0 translate-y-4 pointer-events-none">
+  <i class="fa-solid fa-chevron-up text-sm"></i>
+</button>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     JAVASCRIPT
+══════════════════════════════════════════════════════════════ -->
+<script>
+(function () {
+  'use strict';
+
+  /* ── Theme ───────────────────────────────────────────── */
+  const html      = document.documentElement;
+  const icon      = document.getElementById('theme-icon');
+  const toggle    = document.getElementById('theme-toggle');
+  const savedTheme = localStorage.getItem('rl-theme');
+
+  function applyTheme(dark) {
+    if (dark) {
+      html.classList.add('dark');
+      icon.className = 'fa-solid fa-sun text-sm';
+    } else {
+      html.classList.remove('dark');
+      icon.className = 'fa-solid fa-moon text-sm';
+    }
+  }
+
+  // Default to dark
+  applyTheme(savedTheme ? savedTheme === 'dark' : true);
+
+  toggle.addEventListener('click', () => {
+    const isDark = html.classList.contains('dark');
+    applyTheme(!isDark);
+    localStorage.setItem('rl-theme', isDark ? 'light' : 'dark');
+  });
+
+  /* ── Sticky header shadow ────────────────────────────── */
+  const header = document.getElementById('header');
+  window.addEventListener('scroll', () => {
+    header.classList.toggle(
+      'bg-white/90',
+      window.scrollY > 20 && !html.classList.contains('dark')
+    );
+    header.classList.toggle(
+      'dark:bg-slate-950/95',
+      window.scrollY > 20
+    );
+    header.classList.toggle('backdrop-blur-md', window.scrollY > 20);
+    header.classList.toggle('shadow-sm', window.scrollY > 20);
+  }, { passive: true });
+
+  /* ── Hamburger ───────────────────────────────────────── */
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobile-menu');
+  hamburger.addEventListener('click', () => {
+    mobileMenu.classList.toggle('open');
+  });
+  mobileMenu.querySelectorAll('a').forEach(a =>
+    a.addEventListener('click', () => mobileMenu.classList.remove('open'))
+  );
+
+  /* ── Scroll reveal ───────────────────────────────────── */
+  const revealEls = document.querySelectorAll('.reveal');
+  const revealObs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        revealObs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  revealEls.forEach(el => revealObs.observe(el));
+
+  /* ── Active nav link on scroll ───────────────────────── */
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.nav-link');
+  const activeObs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        navLinks.forEach(l => l.classList.remove('active'));
+        const match = document.querySelector(`.nav-link[href="#${e.target.id}"]`);
+        if (match) match.classList.add('active');
+      }
+    });
+  }, { rootMargin: '-40% 0px -55% 0px' });
+  sections.forEach(s => activeObs.observe(s));
+
+  /* ── Back to top ─────────────────────────────────────── */
+  const btt = document.getElementById('back-to-top');
+  window.addEventListener('scroll', () => {
+    const show = window.scrollY > 400;
+    btt.classList.toggle('opacity-100', show);
+    btt.classList.toggle('opacity-0', !show);
+    btt.classList.toggle('translate-y-0', show);
+    btt.classList.toggle('translate-y-4', !show);
+    btt.classList.toggle('pointer-events-auto', show);
+    btt.classList.toggle('pointer-events-none', !show);
+  }, { passive: true });
+  btt.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+  /* ── Footer year ─────────────────────────────────────── */
+  document.getElementById('footer-year').textContent = new Date().getFullYear();
+
+  /* ── Typewriter effect ───────────────────────────────── */
+  const titles = [
+    'Analista de TI',
+    'Técnico em Telecomunicações II',
+    'Especialista em I.A e Automação',
+    'Técnico Instalador de SDAI',
+  ];
+  let ti = 0, ci = 0, deleting = false;
+  const tw = document.getElementById('typewriter');
+
+  function typeWriter() {
+    const current = titles[ti];
+    if (!deleting) {
+      tw.textContent = current.slice(0, ci + 1);
+      ci++;
+      if (ci === current.length) {
+        deleting = true;
+        setTimeout(typeWriter, 1800);
+        return;
+      }
+    } else {
+      tw.textContent = current.slice(0, ci - 1);
+      ci--;
+      if (ci === 0) {
+        deleting = false;
+        ti = (ti + 1) % titles.length;
+      }
+    }
+    setTimeout(typeWriter, deleting ? 60 : 110);
+  }
+  typeWriter();
+
+  /* ── Download CV (simulated) ─────────────────────────── */
+  document.getElementById('download-cv').addEventListener('click', () => {
+    alert('📄 Em breve o currículo estará disponível para download!\nEntre em contato pelo e-mail: rhodolpho0@gmail.com');
+  });
+
+  /* ── Animate skill bars when visible ────────────────── */
+  const barObs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.querySelectorAll('.skill-bar-fill').forEach(bar => {
+          bar.style.width = bar.dataset.pct + '%';
+        });
+        barObs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.25 });
+  document.querySelectorAll('#skills-list > div').forEach(el => barObs.observe(el));
+
+  /* ── Projects data & render ──────────────────────────── */
+  const projects = [
+    {
+      title:   'Agente de IA — Automação WhatsApp Clínica Médica',
+      desc:    'Desenvolvimento de um Agente de IA Autônomo para automatizar o atendimento via WhatsApp de uma clínica multiespecialidades. O agente agenda consultas, responde dúvidas de pacientes, consulta disponibilidade de médicos em tempo real e encaminha casos urgentes — tudo sem intervenção humana.',
+      tags:    ['Agente de IA', 'WhatsApp API', 'Automação', 'LLM', 'Engenharia de Prompt'],
+      cat:     'ti',
+      icon:    'fa-solid fa-robot',
+      color:   '#8b5cf6',
+      github:  null,
+      demo:    null,
+    },
+    {
+      title:   'Estruturação e Montagem de Racks',
+      desc:    'Montagem física e organização lógica de racks padrão 19". Instalação de switches, patch panels, servidores e DIOs com documentação técnica.',
+      tags:    ['Cabeamento', 'Racks 19"', 'Infraestrutura'],
+      cat:     'telecom',
+      icon:    'fa-solid fa-server',
+      color:   '#0ea5e9',
+      github:  null,
+      demo:    null,
+    },
+    {
+      title:   'SDAI — Edifício +22 Pavimentos',
+      desc:    'Implantação completa de Sistema de Detecção e Alarme de Incêndio em edifício de 22 andares. Instalação, configuração e manutenção.',
+      tags:    ['SDAI', 'Segurança', 'Incêndio'],
+      cat:     'telecom',
+      icon:    'fa-solid fa-fire-extinguisher',
+      color:   '#ef4444',
+      github:  null,
+      demo:    null,
+    },
+    {
+      title:   'Certificação de Rede — PRF',
+      desc:    'Projeto técnico de certificação de pontos lógicos de voz e dados nas instalações da Polícia Rodoviária Federal. Certificação com equipamentos Fluke.',
+      tags:    ['Cabeamento Estruturado', 'Certificação Fluke', 'PRF'],
+      cat:     'telecom',
+      icon:    'fa-solid fa-certificate',
+      color:   '#f59e0b',
+      github:  null,
+      demo:    null,
+    },
+    {
+      title:   'Comissionamento de Fibra Óptica',
+      desc:    'Comissionamento e elaboração de relatórios técnicos de rede de fibra óptica utilizando equipamentos de precisão (OTDR, splice, certificação).',
+      tags:    ['Fibra Óptica', 'OTDR', 'Relatório Técnico'],
+      cat:     'telecom',
+      icon:    'fa-solid fa-circle-nodes',
+      color:   '#10b981',
+      github:  null,
+      demo:    null,
+    },
+    {
+      title:   'Sistema de Manutenção de Frota',
+      desc:    'Desenvolvimento de sistema web para controle e gestão de frotas veiculares (CRUD). Construído com PHP, HTML5 e Bootstrap 5.',
+      tags:    ['PHP', 'HTML5', 'Bootstrap 5', 'CRUD'],
+      cat:     'ti',
+      icon:    'fa-solid fa-truck',
+      color:   '#8b5cf6',
+      github:  'https://github.com/roxlmz',
+      demo:    null,
+    },
+  ];
+
+  const grid = document.getElementById('projects-grid');
+
+  function renderProjects(filter) {
+    grid.innerHTML = '';
+    projects
+      .filter(p => filter === 'all' || p.cat === filter)
+      .forEach((p, i) => {
+        const card = document.createElement('div');
+        card.className = 'reveal glow-card bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/50 rounded-2xl overflow-hidden flex flex-col';
+        card.style.animationDelay = `${i * 0.08}s`;
+        card.innerHTML = `
+          <div class="h-36 flex items-center justify-center" style="background:${p.color}12">
+            <i class="${p.icon} text-5xl" style="color:${p.color}"></i>
+          </div>
+          <div class="p-6 flex flex-col flex-1">
+            <h3 class="font-display font-700 text-base text-slate-900 dark:text-white mb-2">${p.title}</h3>
+            <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed flex-1 mb-4">${p.desc}</p>
+            <div class="flex flex-wrap gap-1.5 mb-4">
+              ${p.tags.map(t => `<span class="tech-badge">${t}</span>`).join('')}
+            </div>
+            <div class="flex gap-3">
+              ${p.github ? `<a href="${p.github}" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 text-xs font-medium text-slate-600 dark:text-slate-400 hover:text-brand-500 transition-colors"><i class="fa-brands fa-github"></i> GitHub</a>` : ''}
+              ${p.demo   ? `<a href="${p.demo}"   target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 text-xs font-medium text-slate-600 dark:text-slate-400 hover:text-brand-500 transition-colors"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>` : ''}
+              ${!p.github && !p.demo ? `<span class="text-xs text-slate-400 dark:text-slate-500 italic">Projeto interno / confidencial</span>` : ''}
+            </div>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+
+    // Re-observe new cards
+    grid.querySelectorAll('.reveal').forEach(el => {
+      revealObs.observe(el);
+    });
+  }
+
+  renderProjects('all');
+
+  // Filter buttons
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      renderProjects(btn.dataset.filter);
+    });
+  });
+
+  /* ── Contact form ────────────────────────────────────── */
+  document.getElementById('form-submit').addEventListener('click', () => {
+    const nome    = document.getElementById('cf-nome').value.trim();
+    const email   = document.getElementById('cf-email').value.trim();
+    const assunto = document.getElementById('cf-assunto').value.trim();
+    const msg     = document.getElementById('cf-msg').value.trim();
+    const fb      = document.getElementById('form-feedback');
+
+    if (!nome || !email || !assunto || !msg) {
+      fb.textContent = '⚠️ Por favor, preencha todos os campos obrigatórios.';
+      fb.className   = 'text-center text-sm text-amber-500 block';
+      return;
+    }
+    const emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRe.test(email)) {
+      fb.textContent = '⚠️ Informe um e-mail válido.';
+      fb.className   = 'text-center text-sm text-amber-500 block';
+      return;
+    }
+
+    // Simulated send
+    const btn = document.getElementById('form-submit');
+    btn.disabled = true;
+    btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin text-xs"></i> Enviando...';
+
+    setTimeout(() => {
+      fb.textContent = `✅ Mensagem enviada com sucesso, ${nome}! Retornarei em breve.`;
+      fb.className   = 'text-center text-sm text-accent-500 block';
+      ['cf-nome','cf-email','cf-assunto','cf-msg'].forEach(id => document.getElementById(id).value = '');
+      btn.disabled = false;
+      btn.innerHTML = '<i class="fa-solid fa-paper-plane text-xs"></i> Enviar Mensagem';
+    }, 1200);
+  });
+
+  /* ── Smooth scroll for all internal anchors ──────────── */
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      const target = document.querySelector(a.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+
+})();
+</script>
+</body>
+</html>
